@@ -1,0 +1,20 @@
+PODS:
+  - EOCore (2.0.0.74)
+  - IBMTealeaf (10.2.0.145):
+    - EOCore
+  - Realm (3.1.0):
+    - Realm/Headers (= 3.1.0)
+  - Realm/Headers (3.1.0)
+
+DEPENDENCIES:
+  - IBMTealeaf
+  - Realm
+
+SPEC CHECKSUMS:
+  EOCore: d8acdaefd9d0ad5ee704369fcd0de987ad1c76c0
+  IBMTealeaf: 8f08f0d39c747b90412a0b60c23e6769c8a62d92
+  Realm: 09513d7c054678d65cd02ce09871f805b0d758ac
+
+PODFILE CHECKSUM: 4c7b8a92700e8bb465425497ed272235a9352009
+
+COCOAPODS: 1.4.0
