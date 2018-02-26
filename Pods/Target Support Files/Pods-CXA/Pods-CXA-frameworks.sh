@@ -134,13 +134,13 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${PODS_ROOT}/EOCore/SDKs/iOS/Debug/EOCore.framework"
-  install_framework "${PODS_ROOT}/IBMTealeaf/SDKs/iOS/Debug/Tealeaf.framework"
+  install_framework "${PODS_ROOT}/EOCoreDebug/SDKs/iOS/Debug/EOCore.framework"
+  install_framework "${PODS_ROOT}/IBMTealeafDebug/SDKs/iOS/Debug/Tealeaf.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Realm/Realm.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${PODS_ROOT}/EOCore/SDKs/iOS/Debug/EOCore.framework"
-  install_framework "${PODS_ROOT}/IBMTealeaf/SDKs/iOS/Debug/Tealeaf.framework"
+  install_framework "${PODS_ROOT}/EOCoreDebug/SDKs/iOS/Debug/EOCore.framework"
+  install_framework "${PODS_ROOT}/IBMTealeafDebug/SDKs/iOS/Debug/Tealeaf.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Realm/Realm.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

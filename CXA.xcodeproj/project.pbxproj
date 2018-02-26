@@ -7,7 +7,123 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D26895F1B373BF9DF5EBFF7 /* Pods_CXASDKDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D56FE5383520CD9F14BC184 /* Pods_CXASDKDev.framework */; };
 		38C908C2027063402EDF35F2 /* Pods_CXA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56903F3EDD631F15AC7EB6AE /* Pods_CXA.framework */; };
+		6386C4752044B9050036D782 /* libEOCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6386C4772044B9050036D782 /* libEOCore.a */; };
+		6386C4762044B9050036D782 /* libTealeaf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6386C4782044B9050036D782 /* libTealeaf.a */; };
+		63F4A8A02044B7D000A535C8 /* CXAEnv.m in Sources */ = {isa = PBXBuildFile; fileRef = F60180B41E37DF92000615D2 /* CXAEnv.m */; };
+		63F4A8A12044B7D000A535C8 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = F656CB301DC809560098152E /* Item.m */; };
+		63F4A8A22044B7D000A535C8 /* ItemPriceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F671E8F61DBED34E00E8E355 /* ItemPriceTableViewCell.m */; };
+		63F4A8A32044B7D000A535C8 /* Tutorial2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F3C0481EDF53CF0062F1CD /* Tutorial2ViewController.m */; };
+		63F4A8A42044B7D000A535C8 /* BannerImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F671E8DF1DBEB90100E8E355 /* BannerImageTableViewCell.m */; };
+		63F4A8A52044B7D000A535C8 /* Tutorial1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F3C0441EDF53940062F1CD /* Tutorial1ViewController.m */; };
+		63F4A8A62044B7D000A535C8 /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E66E941DD288130067784A /* PaymentViewController.m */; };
+		63F4A8A72044B7D000A535C8 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = F68FB8A41DCBBC8900E039A6 /* Category.m */; };
+		63F4A8A82044B7D000A535C8 /* SupportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F697FCD51E944F4900CD8275 /* SupportViewController.m */; };
+		63F4A8A92044B7D000A535C8 /* ItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F671E8DC1DBE943200E8E355 /* ItemTableViewCell.m */; };
+		63F4A8AA2044B7D000A535C8 /* UserAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F673E5271DD4D8E4008CA7E9 /* UserAccountViewController.m */; };
+		63F4A8AB2044B7D000A535C8 /* CXAEnvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F60180B11E37DA59000615D2 /* CXAEnvViewController.m */; };
+		63F4A8AC2044B7D000A535C8 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F625BD051DB93C4E007D78FE /* AccountViewController.m */; };
+		63F4A8AD2044B7D000A535C8 /* CXATabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F673E52E1DD4F8FB008CA7E9 /* CXATabBarController.m */; };
+		63F4A8AE2044B7D000A535C8 /* ItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F671E9001DBED3A800E8E355 /* ItemDetailViewController.m */; };
+		63F4A8AF2044B7D000A535C8 /* ItemTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F671E8F01DBED32200E8E355 /* ItemTitleTableViewCell.m */; };
+		63F4A8B02044B7D000A535C8 /* ItemAddToCartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F671E8FC1DBED38100E8E355 /* ItemAddToCartTableViewCell.m */; };
+		63F4A8B12044B7D000A535C8 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = F656CB341DC915380098152E /* User.m */; };
+		63F4A8B22044B7D000A535C8 /* CategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A5BD6D1E2998B100AFCEF9 /* CategoryTableViewCell.m */; };
+		63F4A8B32044B7D000A535C8 /* UserAccountTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F673E52A1DD4DCD7008CA7E9 /* UserAccountTableViewCell.m */; };
+		63F4A8B42044B7D000A535C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F625BCFF1DB93C4E007D78FE /* AppDelegate.m */; };
+		63F4A8B52044B7D000A535C8 /* PreHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C4A1331EE603F900D3F2C4 /* PreHomeViewController.m */; };
+		63F4A8B62044B7D000A535C8 /* RealmDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = F656CB3D1DC93FE30098152E /* RealmDataController.m */; };
+		63F4A8B72044B7D000A535C8 /* ItemListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F69E87501DC40BA2006AEE76 /* ItemListTableViewCell.m */; };
+		63F4A8B82044B7D000A535C8 /* CartItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F671E94A1DC16DD000E8E355 /* CartItemTableViewCell.m */; };
+		63F4A8B92044B7D000A535C8 /* CartCheckOutTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F671E94D1DC16DE900E8E355 /* CartCheckOutTableViewCell.m */; };
+		63F4A8BA2044B7D000A535C8 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66D32D61E3A78B100311A36 /* MoreViewController.m */; };
+		63F4A8BB2044B7D000A535C8 /* AppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F671E9501DC2553300E8E355 /* AppManager.m */; };
+		63F4A8BC2044B7D000A535C8 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F697FCCE1E92FC2B00CD8275 /* AboutViewController.m */; };
+		63F4A8BD2044B7D000A535C8 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F625BD161DB94316007D78FE /* SearchViewController.m */; };
+		63F4A8BE2044B7D000A535C8 /* RecentItems.m in Sources */ = {isa = PBXBuildFile; fileRef = F65008901E8C791E00908051 /* RecentItems.m */; };
+		63F4A8BF2044B7D000A535C8 /* ItemDescriptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F671E8F91DBED36000E8E355 /* ItemDescriptionTableViewCell.m */; };
+		63F4A8C02044B7D000A535C8 /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = F656CB371DC91E3D0098152E /* Order.m */; };
+		63F4A8C12044B7D000A535C8 /* ItemImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F671E8F31DBED33700E8E355 /* ItemImageTableViewCell.m */; };
+		63F4A8C22044B7D000A535C8 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F625BD021DB93C4E007D78FE /* HomeViewController.m */; };
+		63F4A8C32044B7D000A535C8 /* CartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F625BD191DB94335007D78FE /* CartViewController.m */; };
+		63F4A8C42044B7D000A535C8 /* OrderItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F6650F9E1DD3D1C40007E7F2 /* OrderItem.m */; };
+		63F4A8C52044B7D000A535C8 /* CartItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F656CB3A1DC92B660098152E /* CartItem.m */; };
+		63F4A8C62044B7D000A535C8 /* ItemListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F671E95C1DC29A3A00E8E355 /* ItemListViewController.m */; };
+		63F4A8C72044B7D000A535C8 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F625BD1C1DB9A455007D78FE /* SignupViewController.m */; };
+		63F4A8C82044B7D000A535C8 /* TopCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = F65008A81E8ED7F200908051 /* TopCategories.m */; };
+		63F4A8C92044B7D000A535C8 /* CartSummaryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F671E9461DC16DB000E8E355 /* CartSummaryTableViewCell.m */; };
+		63F4A8CA2044B7D000A535C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F625BCFC1DB93C4E007D78FE /* main.m */; };
+		63F4A8CB2044B7D000A535C8 /* Tutorial3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F3C04B1EDF53DF0062F1CD /* Tutorial3ViewController.m */; };
+		63F4A8CD2044B7D000A535C8 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C4A11A1EE0C29200D3F2C4 /* SafariServices.framework */; };
+		63F4A8CE2044B7D000A535C8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A4CD3D1DEA7527002925B5 /* CoreGraphics.framework */; };
+		63F4A8CF2044B7D000A535C8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A4CD3B1DEA7520002925B5 /* CFNetwork.framework */; };
+		63F4A8D02044B7D000A535C8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F671E92B1DC11AD400E8E355 /* CoreTelephony.framework */; };
+		63F4A8D12044B7D000A535C8 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F671E9291DC11AC500E8E355 /* WebKit.framework */; };
+		63F4A8D22044B7D000A535C8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F671E9271DC11AC000E8E355 /* CoreLocation.framework */; };
+		63F4A8D32044B7D000A535C8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F671E9251DC11AAC00E8E355 /* libz.tbd */; };
+		63F4A8D42044B7D000A535C8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F671E9231DC11A9A00E8E355 /* UIKit.framework */; };
+		63F4A8D52044B7D000A535C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F671E9211DC11A9100E8E355 /* Foundation.framework */; };
+		63F4A8D62044B7D000A535C8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F671E91F1DC11A8800E8E355 /* SystemConfiguration.framework */; };
+		63F4A8D92044B7D000A535C8 /* orders@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F625BD421DBAD65D007D78FE /* orders@2x.png */; };
+		63F4A8DA2044B7D000A535C8 /* parmesan.png in Resources */ = {isa = PBXBuildFile; fileRef = F642FA681E6110E700C6441B /* parmesan.png */; };
+		63F4A8DB2044B7D000A535C8 /* budgetTablet_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB86F1DCB90E800E039A6 /* budgetTablet_thumbnail.png */; };
+		63F4A8DC2044B7D000A535C8 /* supremeGaintSofa.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB8941DCB911E00E039A6 /* supremeGaintSofa.png */; };
+		63F4A8DD2044B7D000A535C8 /* portableTablet_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB8771DCB90E800E039A6 /* portableTablet_thumbnail.png */; };
+		63F4A8DE2044B7D000A535C8 /* shop.png in Resources */ = {isa = PBXBuildFile; fileRef = F625BD431DBAD65D007D78FE /* shop.png */; };
+		63F4A8DF2044B7D000A535C8 /* readingTablet_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB8791DCB90E800E039A6 /* readingTablet_thumbnail.png */; };
+		63F4A8E02044B7D000A535C8 /* appenzeller_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F642FA5F1E6110E700C6441B /* appenzeller_thumbnail.png */; };
+		63F4A8E12044B7D000A535C8 /* supremeLoungeStyle_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB8961DCB911E00E039A6 /* supremeLoungeStyle_thumbnail.png */; };
+		63F4A8E22044B7D000A535C8 /* albinibag.png in Resources */ = {isa = PBXBuildFile; fileRef = F642FA5C1E6110E700C6441B /* albinibag.png */; };
+		63F4A8E32044B7D000A535C8 /* sportsfit_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F642FA6B1E6110E700C6441B /* sportsfit_thumbnail.png */; };
+		63F4A8E42044B7D000A535C8 /* budgetLaptop_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB8871DCB910800E039A6 /* budgetLaptop_thumbnail.png */; };
+		63F4A8E52044B7D000A535C8 /* shop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F625BD441DBAD65D007D78FE /* shop@2x.png */; };
+		63F4A8E62044B7D000A535C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F625BD0C1DB93C4E007D78FE /* LaunchScreen.storyboard */; };
+		63F4A8E72044B7D000A535C8 /* rightArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = F671E8ED1DBEC32800E8E355 /* rightArrow.png */; };
+		63F4A8E82044B7D000A535C8 /* blueCheese_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F642FA631E6110E700C6441B /* blueCheese_thumbnail.png */; };
+		63F4A8E92044B7D000A535C8 /* versatilbag.png in Resources */ = {isa = PBXBuildFile; fileRef = F642FA6C1E6110E700C6441B /* versatilbag.png */; };
+		63F4A8EA2044B7D000A535C8 /* kitchenTablet.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB8721DCB90E800E039A6 /* kitchenTablet.png */; };
+		63F4A8EB2044B7D000A535C8 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = F671E9041DBFE5A200E8E355 /* FontAwesome.otf */; };
+		63F4A8EC2044B7D000A535C8 /* multimediaTablet.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB8741DCB90E800E039A6 /* multimediaTablet.png */; };
+		63F4A8ED2044B7D000A535C8 /* archaeo.png in Resources */ = {isa = PBXBuildFile; fileRef = F642FA601E6110E700C6441B /* archaeo.png */; };
+		63F4A8EE2044B7D000A535C8 /* hermitagebag.png in Resources */ = {isa = PBXBuildFile; fileRef = F642FA641E6110E700C6441B /* hermitagebag.png */; };
+		63F4A8EF2044B7D000A535C8 /* versatilbag_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F642FA6D1E6110E700C6441B /* versatilbag_thumbnail.png */; };
+		63F4A8F02044B7D000A535C8 /* blueCheese.png in Resources */ = {isa = PBXBuildFile; fileRef = F642FA621E6110E700C6441B /* blueCheese.png */; };
+		63F4A8F12044B7D000A535C8 /* natura.png in Resources */ = {isa = PBXBuildFile; fileRef = F642FA661E6110E700C6441B /* natura.png */; };
+		63F4A8F22044B7D000A535C8 /* sportsfit.png in Resources */ = {isa = PBXBuildFile; fileRef = F642FA6A1E6110E700C6441B /* sportsfit.png */; };
+		63F4A8F32044B7D000A535C8 /* parmesan_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F642FA691E6110E700C6441B /* parmesan_thumbnail.png */; };
+		63F4A8F42044B7D000A535C8 /* archaeo_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F642FA611E6110E700C6441B /* archaeo_thumbnail.png */; };
+		63F4A8F52044B7D000A535C8 /* studentLaptop_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB88B1DCB910800E039A6 /* studentLaptop_thumbnail.png */; };
+		63F4A8F62044B7D000A535C8 /* officeLaptop_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB8891DCB910800E039A6 /* officeLaptop_thumbnail.png */; };
+		63F4A8F72044B7D000A535C8 /* supremeGaintSofa_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB8951DCB911E00E039A6 /* supremeGaintSofa_thumbnail.png */; };
+		63F4A8F82044B7D000A535C8 /* cart.png in Resources */ = {isa = PBXBuildFile; fileRef = F625BD3D1DBAD65D007D78FE /* cart.png */; };
+		63F4A8F92044B7D000A535C8 /* kitchenTablet_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB8731DCB90E800E039A6 /* kitchenTablet_thumbnail.png */; };
+		63F4A8FA2044B7D000A535C8 /* CXAEnv.png in Resources */ = {isa = PBXBuildFile; fileRef = F6F3C04F1EDF64B50062F1CD /* CXAEnv.png */; };
+		63F4A8FB2044B7D000A535C8 /* appenzeller.png in Resources */ = {isa = PBXBuildFile; fileRef = F642FA5E1E6110E700C6441B /* appenzeller.png */; };
+		63F4A8FC2044B7D000A535C8 /* supremeGaintSofa_banner.png in Resources */ = {isa = PBXBuildFile; fileRef = F673E54A1DDA4AA6008CA7E9 /* supremeGaintSofa_banner.png */; };
+		63F4A8FD2044B7D000A535C8 /* studentLaptop.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB88A1DCB910800E039A6 /* studentLaptop.png */; };
+		63F4A8FE2044B7D000A535C8 /* homeTablet_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB8711DCB90E800E039A6 /* homeTablet_thumbnail.png */; };
+		63F4A8FF2044B7D000A535C8 /* styleHomeUltraCozy_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB8931DCB911E00E039A6 /* styleHomeUltraCozy_thumbnail.png */; };
+		63F4A9002044B7D000A535C8 /* portableTablet.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB8761DCB90E800E039A6 /* portableTablet.png */; };
+		63F4A9012044B7D000A535C8 /* multimediaTablet_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB8751DCB90E800E039A6 /* multimediaTablet_thumbnail.png */; };
+		63F4A9022044B7D000A535C8 /* supremeLoungeStyleSofa.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB8971DCB911E00E039A6 /* supremeLoungeStyleSofa.png */; };
+		63F4A9032044B7D000A535C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F625BD0A1DB93C4E007D78FE /* Assets.xcassets */; };
+		63F4A9042044B7D000A535C8 /* styleHomeUltraCozy.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB8921DCB911E00E039A6 /* styleHomeUltraCozy.png */; };
+		63F4A9052044B7D000A535C8 /* homeTablet.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB8701DCB90E800E039A6 /* homeTablet.png */; };
+		63F4A9062044B7D000A535C8 /* budgetTablet.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB86E1DCB90E800E039A6 /* budgetTablet.png */; };
+		63F4A9072044B7D000A535C8 /* connect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F625BD401DBAD65D007D78FE /* connect@2x.png */; };
+		63F4A9082044B7D000A535C8 /* budgetLaptop.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB8861DCB910800E039A6 /* budgetLaptop.png */; };
+		63F4A9092044B7D000A535C8 /* orders.png in Resources */ = {isa = PBXBuildFile; fileRef = F625BD411DBAD65D007D78FE /* orders.png */; };
+		63F4A90A2044B7D000A535C8 /* natura_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F642FA671E6110E700C6441B /* natura_thumbnail.png */; };
+		63F4A90B2044B7D000A535C8 /* readingTablet.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB8781DCB90E800E039A6 /* readingTablet.png */; };
+		63F4A90C2044B7D000A535C8 /* cart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F625BD3E1DBAD65D007D78FE /* cart@2x.png */; };
+		63F4A90D2044B7D000A535C8 /* connect.png in Resources */ = {isa = PBXBuildFile; fileRef = F625BD3F1DBAD65D007D78FE /* connect.png */; };
+		63F4A90E2044B7D000A535C8 /* hermitagebag_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F642FA651E6110E700C6441B /* hermitagebag_thumbnail.png */; };
+		63F4A90F2044B7D000A535C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F625BD071DB93C4E007D78FE /* Main.storyboard */; };
+		63F4A9102044B7D000A535C8 /* albinibag_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F642FA5D1E6110E700C6441B /* albinibag_thumbnail.png */; };
+		63F4A9112044B7D000A535C8 /* CXAEnv2.png in Resources */ = {isa = PBXBuildFile; fileRef = F6F3C04D1EDF55A20062F1CD /* CXAEnv2.png */; };
+		63F4A9122044B7D000A535C8 /* Replay_screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = F697FCCB1E92F76300CD8275 /* Replay_screenshot.png */; };
+		63F4A9132044B7D000A535C8 /* officeLaptop.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB8881DCB910800E039A6 /* officeLaptop.png */; };
 		F60180B21E37DA59000615D2 /* CXAEnvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F60180B11E37DA59000615D2 /* CXAEnvViewController.m */; };
 		F60180B51E37DF92000615D2 /* CXAEnv.m in Sources */ = {isa = PBXBuildFile; fileRef = F60180B41E37DF92000615D2 /* CXAEnv.m */; };
 		F625BCFD1DB93C4E007D78FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F625BCFC1DB93C4E007D78FE /* main.m */; };
@@ -124,9 +240,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D56FE5383520CD9F14BC184 /* Pods_CXASDKDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CXASDKDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		146BE34FE53050738149CA9D /* Pods-CXASDKDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXASDKDev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CXASDKDev/Pods-CXASDKDev.debug.xcconfig"; sourceTree = "<group>"; };
 		56903F3EDD631F15AC7EB6AE /* Pods_CXA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CXA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6386C4772044B9050036D782 /* libEOCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libEOCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6386C4782044B9050036D782 /* libTealeaf.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTealeaf.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		63F4A91B2044B7D000A535C8 /* CXASDKDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CXASDKDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63F4A91C2044B7D000A535C8 /* CXASDKDev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CXASDKDev-Info.plist"; path = "/Users/sdamale/dev/publicgit/WCXA-SampleApp-iOS/CXASDKDev-Info.plist"; sourceTree = "<absolute>"; };
 		89AF9D78A3CF0E920332DD5C /* Pods-CXA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXA.release.xcconfig"; path = "Pods/Target Support Files/Pods-CXA/Pods-CXA.release.xcconfig"; sourceTree = "<group>"; };
 		B67952BBF0B40D9303E2B6CE /* Pods-CXA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CXA/Pods-CXA.debug.xcconfig"; sourceTree = "<group>"; };
+		F40A81C6AD9CF85AECD4D652 /* Pods-CXASDKDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXASDKDev.release.xcconfig"; path = "Pods/Target Support Files/Pods-CXASDKDev/Pods-CXASDKDev.release.xcconfig"; sourceTree = "<group>"; };
 		F60180B01E37DA59000615D2 /* CXAEnvViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXAEnvViewController.h; sourceTree = "<group>"; };
 		F60180B11E37DA59000615D2 /* CXAEnvViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXAEnvViewController.m; sourceTree = "<group>"; };
 		F60180B31E37DF92000615D2 /* CXAEnv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXAEnv.h; sourceTree = "<group>"; };
@@ -289,6 +412,26 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		63F4A8CC2044B7D000A535C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6386C4752044B9050036D782 /* libEOCore.a in Frameworks */,
+				6386C4762044B9050036D782 /* libTealeaf.a in Frameworks */,
+				63F4A8CD2044B7D000A535C8 /* SafariServices.framework in Frameworks */,
+				63F4A8CE2044B7D000A535C8 /* CoreGraphics.framework in Frameworks */,
+				63F4A8CF2044B7D000A535C8 /* CFNetwork.framework in Frameworks */,
+				63F4A8D02044B7D000A535C8 /* CoreTelephony.framework in Frameworks */,
+				63F4A8D12044B7D000A535C8 /* WebKit.framework in Frameworks */,
+				63F4A8D22044B7D000A535C8 /* CoreLocation.framework in Frameworks */,
+				63F4A8D32044B7D000A535C8 /* libz.tbd in Frameworks */,
+				63F4A8D42044B7D000A535C8 /* UIKit.framework in Frameworks */,
+				63F4A8D52044B7D000A535C8 /* Foundation.framework in Frameworks */,
+				63F4A8D62044B7D000A535C8 /* SystemConfiguration.framework in Frameworks */,
+				1D26895F1B373BF9DF5EBFF7 /* Pods_CXASDKDev.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F625BCF51DB93C4E007D78FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -315,6 +458,8 @@
 			children = (
 				B67952BBF0B40D9303E2B6CE /* Pods-CXA.debug.xcconfig */,
 				89AF9D78A3CF0E920332DD5C /* Pods-CXA.release.xcconfig */,
+				146BE34FE53050738149CA9D /* Pods-CXASDKDev.debug.xcconfig */,
+				F40A81C6AD9CF85AECD4D652 /* Pods-CXASDKDev.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -326,6 +471,7 @@
 				F625BCF91DB93C4E007D78FE /* Products */,
 				F671E91E1DC11A8800E8E355 /* Frameworks */,
 				390D13E2FD1EDD0C5541E6D3 /* Pods */,
+				63F4A91C2044B7D000A535C8 /* CXASDKDev-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -333,6 +479,7 @@
 			isa = PBXGroup;
 			children = (
 				F625BCF81DB93C4E007D78FE /* CXA.app */,
+				63F4A91B2044B7D000A535C8 /* CXASDKDev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -513,6 +660,8 @@
 		F671E91E1DC11A8800E8E355 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6386C4772044B9050036D782 /* libEOCore.a */,
+				6386C4782044B9050036D782 /* libTealeaf.a */,
 				F6C4A11A1EE0C29200D3F2C4 /* SafariServices.framework */,
 				F6A4CD3D1DEA7527002925B5 /* CoreGraphics.framework */,
 				F6A4CD3B1DEA7520002925B5 /* CFNetwork.framework */,
@@ -524,6 +673,7 @@
 				F671E9211DC11A9100E8E355 /* Foundation.framework */,
 				F671E91F1DC11A8800E8E355 /* SystemConfiguration.framework */,
 				56903F3EDD631F15AC7EB6AE /* Pods_CXA.framework */,
+				0D56FE5383520CD9F14BC184 /* Pods_CXASDKDev.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -689,6 +839,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		63F4A89C2044B7D000A535C8 /* CXASDKDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63F4A9182044B7D000A535C8 /* Build configuration list for PBXNativeTarget "CXASDKDev" */;
+			buildPhases = (
+				63F4A89D2044B7D000A535C8 /* [CP] Check Pods Manifest.lock */,
+				63F4A89E2044B7D000A535C8 /* [CP] Check Pods Manifest.lock */,
+				63F4A89F2044B7D000A535C8 /* Sources */,
+				63F4A8CC2044B7D000A535C8 /* Frameworks */,
+				63F4A8D82044B7D000A535C8 /* Resources */,
+				63F4A9142044B7D000A535C8 /* [CP] Embed Pods Frameworks */,
+				63F4A9152044B7D000A535C8 /* [CP] Copy Pods Resources */,
+				63F4A9162044B7D000A535C8 /* 📦 Embed Pods Frameworks */,
+				63F4A9172044B7D000A535C8 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CXASDKDev;
+			productName = CXA;
+			productReference = 63F4A91B2044B7D000A535C8 /* CXASDKDev.app */;
+			productType = "com.apple.product-type.application";
+		};
 		F625BCF71DB93C4E007D78FE /* CXA */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F625BD121DB93C4E007D78FE /* Build configuration list for PBXNativeTarget "CXA" */;
@@ -721,6 +894,9 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = IBM;
 				TargetAttributes = {
+					63F4A89C2044B7D000A535C8 = {
+						DevelopmentTeam = PETKK2G752;
+					};
 					F625BCF71DB93C4E007D78FE = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = PETKK2G752;
@@ -742,11 +918,78 @@
 			projectRoot = "";
 			targets = (
 				F625BCF71DB93C4E007D78FE /* CXA */,
+				63F4A89C2044B7D000A535C8 /* CXASDKDev */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		63F4A8D82044B7D000A535C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F4A8D92044B7D000A535C8 /* orders@2x.png in Resources */,
+				63F4A8DA2044B7D000A535C8 /* parmesan.png in Resources */,
+				63F4A8DB2044B7D000A535C8 /* budgetTablet_thumbnail.png in Resources */,
+				63F4A8DC2044B7D000A535C8 /* supremeGaintSofa.png in Resources */,
+				63F4A8DD2044B7D000A535C8 /* portableTablet_thumbnail.png in Resources */,
+				63F4A8DE2044B7D000A535C8 /* shop.png in Resources */,
+				63F4A8DF2044B7D000A535C8 /* readingTablet_thumbnail.png in Resources */,
+				63F4A8E02044B7D000A535C8 /* appenzeller_thumbnail.png in Resources */,
+				63F4A8E12044B7D000A535C8 /* supremeLoungeStyle_thumbnail.png in Resources */,
+				63F4A8E22044B7D000A535C8 /* albinibag.png in Resources */,
+				63F4A8E32044B7D000A535C8 /* sportsfit_thumbnail.png in Resources */,
+				63F4A8E42044B7D000A535C8 /* budgetLaptop_thumbnail.png in Resources */,
+				63F4A8E52044B7D000A535C8 /* shop@2x.png in Resources */,
+				63F4A8E62044B7D000A535C8 /* LaunchScreen.storyboard in Resources */,
+				63F4A8E72044B7D000A535C8 /* rightArrow.png in Resources */,
+				63F4A8E82044B7D000A535C8 /* blueCheese_thumbnail.png in Resources */,
+				63F4A8E92044B7D000A535C8 /* versatilbag.png in Resources */,
+				63F4A8EA2044B7D000A535C8 /* kitchenTablet.png in Resources */,
+				63F4A8EB2044B7D000A535C8 /* FontAwesome.otf in Resources */,
+				63F4A8EC2044B7D000A535C8 /* multimediaTablet.png in Resources */,
+				63F4A8ED2044B7D000A535C8 /* archaeo.png in Resources */,
+				63F4A8EE2044B7D000A535C8 /* hermitagebag.png in Resources */,
+				63F4A8EF2044B7D000A535C8 /* versatilbag_thumbnail.png in Resources */,
+				63F4A8F02044B7D000A535C8 /* blueCheese.png in Resources */,
+				63F4A8F12044B7D000A535C8 /* natura.png in Resources */,
+				63F4A8F22044B7D000A535C8 /* sportsfit.png in Resources */,
+				63F4A8F32044B7D000A535C8 /* parmesan_thumbnail.png in Resources */,
+				63F4A8F42044B7D000A535C8 /* archaeo_thumbnail.png in Resources */,
+				63F4A8F52044B7D000A535C8 /* studentLaptop_thumbnail.png in Resources */,
+				63F4A8F62044B7D000A535C8 /* officeLaptop_thumbnail.png in Resources */,
+				63F4A8F72044B7D000A535C8 /* supremeGaintSofa_thumbnail.png in Resources */,
+				63F4A8F82044B7D000A535C8 /* cart.png in Resources */,
+				63F4A8F92044B7D000A535C8 /* kitchenTablet_thumbnail.png in Resources */,
+				63F4A8FA2044B7D000A535C8 /* CXAEnv.png in Resources */,
+				63F4A8FB2044B7D000A535C8 /* appenzeller.png in Resources */,
+				63F4A8FC2044B7D000A535C8 /* supremeGaintSofa_banner.png in Resources */,
+				63F4A8FD2044B7D000A535C8 /* studentLaptop.png in Resources */,
+				63F4A8FE2044B7D000A535C8 /* homeTablet_thumbnail.png in Resources */,
+				63F4A8FF2044B7D000A535C8 /* styleHomeUltraCozy_thumbnail.png in Resources */,
+				63F4A9002044B7D000A535C8 /* portableTablet.png in Resources */,
+				63F4A9012044B7D000A535C8 /* multimediaTablet_thumbnail.png in Resources */,
+				63F4A9022044B7D000A535C8 /* supremeLoungeStyleSofa.png in Resources */,
+				63F4A9032044B7D000A535C8 /* Assets.xcassets in Resources */,
+				63F4A9042044B7D000A535C8 /* styleHomeUltraCozy.png in Resources */,
+				63F4A9052044B7D000A535C8 /* homeTablet.png in Resources */,
+				63F4A9062044B7D000A535C8 /* budgetTablet.png in Resources */,
+				63F4A9072044B7D000A535C8 /* connect@2x.png in Resources */,
+				63F4A9082044B7D000A535C8 /* budgetLaptop.png in Resources */,
+				63F4A9092044B7D000A535C8 /* orders.png in Resources */,
+				63F4A90A2044B7D000A535C8 /* natura_thumbnail.png in Resources */,
+				63F4A90B2044B7D000A535C8 /* readingTablet.png in Resources */,
+				63F4A90C2044B7D000A535C8 /* cart@2x.png in Resources */,
+				63F4A90D2044B7D000A535C8 /* connect.png in Resources */,
+				63F4A90E2044B7D000A535C8 /* hermitagebag_thumbnail.png in Resources */,
+				63F4A90F2044B7D000A535C8 /* Main.storyboard in Resources */,
+				63F4A9102044B7D000A535C8 /* albinibag_thumbnail.png in Resources */,
+				63F4A9112044B7D000A535C8 /* CXAEnv2.png in Resources */,
+				63F4A9122044B7D000A535C8 /* Replay_screenshot.png in Resources */,
+				63F4A9132044B7D000A535C8 /* officeLaptop.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F625BCF61DB93C4E007D78FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -831,6 +1074,107 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		63F4A89D2044B7D000A535C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CXASDKDev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63F4A89E2044B7D000A535C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		63F4A9142044B7D000A535C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CXASDKDev/Pods-CXASDKDev-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CXASDKDev/Pods-CXASDKDev-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63F4A9152044B7D000A535C8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CXA/Pods-CXA-resources.sh",
+				"${PODS_ROOT}/EOCore/SDKs/iOS/Debug/EOCore.framework/EOCoreSettings.bundle",
+				"${PODS_ROOT}/IBMTealeaf/SDKs/iOS/Debug/Tealeaf.framework/TLFResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EOCoreSettings.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TLFResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CXASDKDev/Pods-CXASDKDev-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63F4A9162044B7D000A535C8 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CXASDKDev/Pods-CXASDKDev-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63F4A9172044B7D000A535C8 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CXASDKDev/Pods-CXASDKDev-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		71479A73C0E38E7AA67F2696 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -871,8 +1215,8 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CXA/Pods-CXA-frameworks.sh",
-				"${PODS_ROOT}/EOCore/SDKs/iOS/Debug/EOCore.framework",
-				"${PODS_ROOT}/IBMTealeaf/SDKs/iOS/Debug/Tealeaf.framework",
+				"${PODS_ROOT}/EOCoreDebug/SDKs/iOS/Debug/EOCore.framework",
+				"${PODS_ROOT}/IBMTealeafDebug/SDKs/iOS/Debug/Tealeaf.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -908,8 +1252,8 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CXA/Pods-CXA-resources.sh",
-				"${PODS_ROOT}/EOCore/SDKs/iOS/Debug/EOCore.framework/EOCoreSettings.bundle",
-				"${PODS_ROOT}/IBMTealeaf/SDKs/iOS/Debug/Tealeaf.framework/TLFResources.bundle",
+				"${PODS_ROOT}/EOCoreDebug/SDKs/iOS/Debug/EOCore.framework/EOCoreSettings.bundle",
+				"${PODS_ROOT}/IBMTealeafDebug/SDKs/iOS/Debug/Tealeaf.framework/TLFResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -924,6 +1268,57 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		63F4A89F2044B7D000A535C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F4A8A02044B7D000A535C8 /* CXAEnv.m in Sources */,
+				63F4A8A12044B7D000A535C8 /* Item.m in Sources */,
+				63F4A8A22044B7D000A535C8 /* ItemPriceTableViewCell.m in Sources */,
+				63F4A8A32044B7D000A535C8 /* Tutorial2ViewController.m in Sources */,
+				63F4A8A42044B7D000A535C8 /* BannerImageTableViewCell.m in Sources */,
+				63F4A8A52044B7D000A535C8 /* Tutorial1ViewController.m in Sources */,
+				63F4A8A62044B7D000A535C8 /* PaymentViewController.m in Sources */,
+				63F4A8A72044B7D000A535C8 /* Category.m in Sources */,
+				63F4A8A82044B7D000A535C8 /* SupportViewController.m in Sources */,
+				63F4A8A92044B7D000A535C8 /* ItemTableViewCell.m in Sources */,
+				63F4A8AA2044B7D000A535C8 /* UserAccountViewController.m in Sources */,
+				63F4A8AB2044B7D000A535C8 /* CXAEnvViewController.m in Sources */,
+				63F4A8AC2044B7D000A535C8 /* AccountViewController.m in Sources */,
+				63F4A8AD2044B7D000A535C8 /* CXATabBarController.m in Sources */,
+				63F4A8AE2044B7D000A535C8 /* ItemDetailViewController.m in Sources */,
+				63F4A8AF2044B7D000A535C8 /* ItemTitleTableViewCell.m in Sources */,
+				63F4A8B02044B7D000A535C8 /* ItemAddToCartTableViewCell.m in Sources */,
+				63F4A8B12044B7D000A535C8 /* User.m in Sources */,
+				63F4A8B22044B7D000A535C8 /* CategoryTableViewCell.m in Sources */,
+				63F4A8B32044B7D000A535C8 /* UserAccountTableViewCell.m in Sources */,
+				63F4A8B42044B7D000A535C8 /* AppDelegate.m in Sources */,
+				63F4A8B52044B7D000A535C8 /* PreHomeViewController.m in Sources */,
+				63F4A8B62044B7D000A535C8 /* RealmDataController.m in Sources */,
+				63F4A8B72044B7D000A535C8 /* ItemListTableViewCell.m in Sources */,
+				63F4A8B82044B7D000A535C8 /* CartItemTableViewCell.m in Sources */,
+				63F4A8B92044B7D000A535C8 /* CartCheckOutTableViewCell.m in Sources */,
+				63F4A8BA2044B7D000A535C8 /* MoreViewController.m in Sources */,
+				63F4A8BB2044B7D000A535C8 /* AppManager.m in Sources */,
+				63F4A8BC2044B7D000A535C8 /* AboutViewController.m in Sources */,
+				63F4A8BD2044B7D000A535C8 /* SearchViewController.m in Sources */,
+				63F4A8BE2044B7D000A535C8 /* RecentItems.m in Sources */,
+				63F4A8BF2044B7D000A535C8 /* ItemDescriptionTableViewCell.m in Sources */,
+				63F4A8C02044B7D000A535C8 /* Order.m in Sources */,
+				63F4A8C12044B7D000A535C8 /* ItemImageTableViewCell.m in Sources */,
+				63F4A8C22044B7D000A535C8 /* HomeViewController.m in Sources */,
+				63F4A8C32044B7D000A535C8 /* CartViewController.m in Sources */,
+				63F4A8C42044B7D000A535C8 /* OrderItem.m in Sources */,
+				63F4A8C52044B7D000A535C8 /* CartItem.m in Sources */,
+				63F4A8C62044B7D000A535C8 /* ItemListViewController.m in Sources */,
+				63F4A8C72044B7D000A535C8 /* SignupViewController.m in Sources */,
+				63F4A8C82044B7D000A535C8 /* TopCategories.m in Sources */,
+				63F4A8C92044B7D000A535C8 /* CartSummaryTableViewCell.m in Sources */,
+				63F4A8CA2044B7D000A535C8 /* main.m in Sources */,
+				63F4A8CB2044B7D000A535C8 /* Tutorial3ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F625BCF41DB93C4E007D78FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -997,6 +1392,78 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		63F4A9192044B7D000A535C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 146BE34FE53050738149CA9D /* Pods-CXASDKDev.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chanikya Mandapathi (J9EX6CAY5D)";
+				COMPRESS_PNG_FILES = NO;
+				DEVELOPMENT_TEAM = PETKK2G752;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CXA",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CXA/CXA-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/CXASDKDev-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CXA",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.wce.cxa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a3069214-1692-4c54-80d0-e601cc326099";
+				PROVISIONING_PROFILE_SPECIFIER = "IBM Watson Customer Experience CXA App - Dev Prof";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63F4A91A2044B7D000A535C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F40A81C6AD9CF85AECD4D652 /* Pods-CXASDKDev.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chanikya Mandapathi (J9EX6CAY5D)";
+				COMPRESS_PNG_FILES = NO;
+				DEVELOPMENT_TEAM = PETKK2G752;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CXA",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CXA/CXA-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/CXASDKDev-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CXA",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.wce.cxa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a3069214-1692-4c54-80d0-e601cc326099";
+				PROVISIONING_PROFILE_SPECIFIER = "IBM Watson Customer Experience CXA App - Dev Prof";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		F625BD101DB93C4E007D78FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1172,6 +1639,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		63F4A9182044B7D000A535C8 /* Build configuration list for PBXNativeTarget "CXASDKDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63F4A9192044B7D000A535C8 /* Debug */,
+				63F4A91A2044B7D000A535C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F625BCF31DB93C4E007D78FE /* Build configuration list for PBXProject "CXA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

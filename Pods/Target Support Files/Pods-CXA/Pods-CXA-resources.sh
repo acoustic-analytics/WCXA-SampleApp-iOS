@@ -84,12 +84,12 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "${PODS_ROOT}/EOCore/SDKs/iOS/Debug/EOCore.framework/EOCoreSettings.bundle"
-  install_resource "${PODS_ROOT}/IBMTealeaf/SDKs/iOS/Debug/Tealeaf.framework/TLFResources.bundle"
+  install_resource "${PODS_ROOT}/EOCoreDebug/SDKs/iOS/Debug/EOCore.framework/EOCoreSettings.bundle"
+  install_resource "${PODS_ROOT}/IBMTealeafDebug/SDKs/iOS/Debug/Tealeaf.framework/TLFResources.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "${PODS_ROOT}/EOCore/SDKs/iOS/Debug/EOCore.framework/EOCoreSettings.bundle"
-  install_resource "${PODS_ROOT}/IBMTealeaf/SDKs/iOS/Debug/Tealeaf.framework/TLFResources.bundle"
+  install_resource "${PODS_ROOT}/EOCoreDebug/SDKs/iOS/Debug/EOCore.framework/EOCoreSettings.bundle"
+  install_resource "${PODS_ROOT}/IBMTealeafDebug/SDKs/iOS/Debug/Tealeaf.framework/TLFResources.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
