@@ -41,7 +41,7 @@ In the respective targets for your project in the Podfile add the following line
 
 `pod 'IBMTealeaf'`
 
-In the respective targets for your project in the Podfile add the following line if you want to use IBM Tealeaf SDK's release version
+In the respective targets for your project in the Podfile add the following line if you want to use IBM Tealeaf SDK's debug version
 
 `pod 'IBMTealeafDebug'`
 
@@ -56,6 +56,10 @@ Now you need to install the pods by running one of the following commands.
 or to update
 
 `pod update`
+
+Above pod command (install or update) should complete with no errors. If you do see errors run the same command with `--verbose` option and share the error log with us.
+
+Open `CXA.xcworkspace` file and not the `CXA.xcodeproj` file. Once you open the workspace file, please use target CXA to build the sample app and run it. There are multiple targets in the project however the only one that serves for this example is the CXA target.
 
 ## Troubleshooting
 
