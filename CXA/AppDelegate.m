@@ -11,6 +11,9 @@
 #import "RealmDataController.h"
 #import "CXAEnv.h"
 #import "RecentItems.h"
+#import "Realm/RLMRealm.h"
+#import "Item.h"
+#import "CXAEnv.h"
 
 @interface AppDelegate ()
 
@@ -42,12 +45,26 @@
         [[RealmDataController sharedInstance] addDataToRealm];
     }
     
+    RLMResults<CXAEnv *> *results = [CXAEnv allObjects];
+    if (results.count > 0) {
+        [[TLFApplicationHelper sharedInstance] setPostMessageUrl:results[0].postMessageURL];
+        [[TLFApplicationHelper sharedInstance] setKillSwitchUrl:results[0].killSwitch];
+        [[TLFApplicationHelper sharedInstance] setConfigurableItem:@"AppKey" value:results[0].appKey];
+        [[TLFApplicationHelper sharedInstance] setConfigurableItem:@"ibmId" value:results[0].ibmID];
+        
+        [AppManager sharedInstance].openConfigSession = NO;
+    }
+    else {
+        // use default config from plist
+    }
+    [[TLFApplicationHelper sharedInstance] enableTealeafFramework];
+    
     // Logging custom event for ibmId in each session
-//    if (dict[@"ibmId"]) {
-//        if (![dict[@"ibmId"] isEqualToString:@""]) {
-//            [[TLFCustomEvent sharedInstance] logEvent:@"ibmId" value:dict[@"ibmId"]];
-//        }
-//    }
+    //    if (dict[@"ibmId"]) {
+    //        if (![dict[@"ibmId"] isEqualToString:@""]) {
+    //            [[TLFCustomEvent sharedInstance] logEvent:@"ibmId" value:dict[@"ibmId"]];
+    //        }
+    //    }
     return YES;
 }
 

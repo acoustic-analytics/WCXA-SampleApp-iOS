@@ -2496,9 +2496,9 @@
         <image name="shop.png" width="26" height="26"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wz1-Pc-leZ"/>
         <segue reference="OLE-7O-cz6"/>
-        <segue reference="VgB-rE-bO1"/>
         <segue reference="9XF-IL-2wO"/>
+        <segue reference="wz1-Pc-leZ"/>
+        <segue reference="VgB-rE-bO1"/>
     </inferredMetricsTieBreakers>
 </document>

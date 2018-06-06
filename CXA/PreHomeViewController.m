@@ -39,7 +39,7 @@
     if (![[[NSUserDefaults standardUserDefaults] valueForKey:@"isAppOpenedFirstTime"] boolValue]) {
         [[NSUserDefaults standardUserDefaults] setObject:@(YES) forKey:@"isAppOpenedFirstTime"];
         
-        [self showPageControllerTutorial];
+        //[self showPageControllerTutorial];
     }
 }
 
@@ -50,7 +50,10 @@
 
 - (void) viewWillAppear:(BOOL)animated {
     self.navigationController.navigationBarHidden = YES;
-    if ([AppManager sharedInstance].openConfigSession) {
+    if ([[[NSUserDefaults standardUserDefaults] valueForKey:@"isAppOpenedFirstTime"] boolValue]) {
+        [self performSegueWithIdentifier:@"startSessionSegue" sender:self];
+    }
+    else if ([AppManager sharedInstance].openConfigSession) {
         [self performSegueWithIdentifier:@"startSessionSegue" sender:self];
     }
 }
@@ -61,7 +64,7 @@
     [self performSegueWithIdentifier:@"startSessionSegue" sender:self];
 }
 
-- (IBAction)configureEnv:(id)sender { 
+- (IBAction)configureEnv:(id)sender {
     [self performSegueWithIdentifier:@"configSegue" sender:self];
 }
 
