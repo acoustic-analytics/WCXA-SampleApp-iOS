@@ -8,16 +8,27 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>14</integer>
 		</dict>
 		<key>Pods-CXA.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
+		<key>Pods-CXASDKDev.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>17</integer>
 		</dict>
 		<key>Realm.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>16</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>

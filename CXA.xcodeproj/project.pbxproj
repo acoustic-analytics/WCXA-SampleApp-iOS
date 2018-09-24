@@ -197,6 +197,8 @@
 		F673E52B1DD4DCD7008CA7E9 /* UserAccountTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F673E52A1DD4DCD7008CA7E9 /* UserAccountTableViewCell.m */; };
 		F673E52F1DD4F8FB008CA7E9 /* CXATabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F673E52E1DD4F8FB008CA7E9 /* CXATabBarController.m */; };
 		F673E54B1DDA4AA7008CA7E9 /* supremeGaintSofa_banner.png in Resources */ = {isa = PBXBuildFile; fileRef = F673E54A1DDA4AA6008CA7E9 /* supremeGaintSofa_banner.png */; };
+		F67726842159920200C45E0C /* TLFResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F67726832159920200C45E0C /* TLFResources.bundle */; };
+		F67726862159921800C45E0C /* EOCoreSettings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F67726852159921800C45E0C /* EOCoreSettings.bundle */; };
 		F68FB87A1DCB90E800E039A6 /* budgetTablet.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB86E1DCB90E800E039A6 /* budgetTablet.png */; };
 		F68FB87B1DCB90E800E039A6 /* budgetTablet_thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB86F1DCB90E800E039A6 /* budgetTablet_thumbnail.png */; };
 		F68FB87C1DCB90E800E039A6 /* homeTablet.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB8701DCB90E800E039A6 /* homeTablet.png */; };
@@ -359,6 +361,8 @@
 		F673E52D1DD4F8FB008CA7E9 /* CXATabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXATabBarController.h; sourceTree = "<group>"; };
 		F673E52E1DD4F8FB008CA7E9 /* CXATabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXATabBarController.m; sourceTree = "<group>"; };
 		F673E54A1DDA4AA6008CA7E9 /* supremeGaintSofa_banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = supremeGaintSofa_banner.png; sourceTree = "<group>"; };
+		F67726832159920200C45E0C /* TLFResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TLFResources.bundle; path = "../../devgit/iOS-SDK/iOSSrc/Tealeaf/Tealeaf/TLFResources.bundle"; sourceTree = "<group>"; };
+		F67726852159921800C45E0C /* EOCoreSettings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = EOCoreSettings.bundle; path = "../../devgit/iOS-SDK/iOSSrc/EOCore/EOCore/EOCoreSettings.bundle"; sourceTree = "<group>"; };
 		F68FB86E1DCB90E800E039A6 /* budgetTablet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = budgetTablet.png; sourceTree = "<group>"; };
 		F68FB86F1DCB90E800E039A6 /* budgetTablet_thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = budgetTablet_thumbnail.png; sourceTree = "<group>"; };
 		F68FB8701DCB90E800E039A6 /* homeTablet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeTablet.png; sourceTree = "<group>"; };
@@ -467,6 +471,8 @@
 		F625BCEF1DB93C4E007D78FE = {
 			isa = PBXGroup;
 			children = (
+				F67726852159921800C45E0C /* EOCoreSettings.bundle */,
+				F67726832159920200C45E0C /* TLFResources.bundle */,
 				F625BCFA1DB93C4E007D78FE /* CXA */,
 				F625BCF91DB93C4E007D78FE /* Products */,
 				F671E91E1DC11A8800E8E355 /* Frameworks */,
@@ -952,6 +958,7 @@
 				63F4A8EE2044B7D000A535C8 /* hermitagebag.png in Resources */,
 				63F4A8EF2044B7D000A535C8 /* versatilbag_thumbnail.png in Resources */,
 				63F4A8F02044B7D000A535C8 /* blueCheese.png in Resources */,
+				F67726842159920200C45E0C /* TLFResources.bundle in Resources */,
 				63F4A8F12044B7D000A535C8 /* natura.png in Resources */,
 				63F4A8F22044B7D000A535C8 /* sportsfit.png in Resources */,
 				63F4A8F32044B7D000A535C8 /* parmesan_thumbnail.png in Resources */,
@@ -964,6 +971,7 @@
 				63F4A8FA2044B7D000A535C8 /* CXAEnv.png in Resources */,
 				63F4A8FB2044B7D000A535C8 /* appenzeller.png in Resources */,
 				63F4A8FC2044B7D000A535C8 /* supremeGaintSofa_banner.png in Resources */,
+				F67726862159921800C45E0C /* EOCoreSettings.bundle in Resources */,
 				63F4A8FD2044B7D000A535C8 /* studentLaptop.png in Resources */,
 				63F4A8FE2044B7D000A535C8 /* homeTablet_thumbnail.png in Resources */,
 				63F4A8FF2044B7D000A535C8 /* styleHomeUltraCozy_thumbnail.png in Resources */,
