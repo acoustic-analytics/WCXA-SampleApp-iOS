@@ -1,7 +1,5 @@
 # Uncomment this line to define a global platform for your project
 # platform :ios, '9.0'
-source 'https://github.com/ibm-watson-cxa/EOCore.git'
-source 'https://github.com/ibm-watson-cxa/IBMTealeaf.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
 platform :ios, '9.0'
@@ -14,8 +12,7 @@ target 'CXA' do
   pod 'Realm'
   
   # If you want to use release binaries of Tealeaf please uncomment the following line and comment out the pod 'IBMTealeafDebug' line
-  #pod 'IBMTealeaf'
-  pod 'IBMTealeafDebug'
+  pod 'IBMTealeaf'
 
 end
 
