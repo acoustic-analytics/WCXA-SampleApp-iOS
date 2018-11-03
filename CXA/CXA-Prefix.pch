@@ -15,7 +15,6 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import <Tealeaf/TLFApplicationHelper.h>
-#import <Tealeaf/TLFApplicationHelper.h>
 #import <Tealeaf/TLFCustomEvent.h>
 #import <Tealeaf/TLFPublicDefinitions.h>
 #import <Tealeaf/TLFApplication.h>

@@ -855,9 +855,7 @@
 				63F4A8CC2044B7D000A535C8 /* Frameworks */,
 				63F4A8D82044B7D000A535C8 /* Resources */,
 				63F4A9142044B7D000A535C8 /* [CP] Embed Pods Frameworks */,
-				63F4A9152044B7D000A535C8 /* [CP] Copy Pods Resources */,
 				63F4A9162044B7D000A535C8 /* 📦 Embed Pods Frameworks */,
-				63F4A9172044B7D000A535C8 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -897,7 +895,7 @@
 		F625BCF01DB93C4E007D78FE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = IBM;
 				TargetAttributes = {
 					63F4A89C2044B7D000A535C8 = {
@@ -1133,26 +1131,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CXASDKDev/Pods-CXASDKDev-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		63F4A9152044B7D000A535C8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CXA/Pods-CXA-resources.sh",
-				"${PODS_ROOT}/EOCore/SDKs/iOS/Debug/EOCore.framework/EOCoreSettings.bundle",
-				"${PODS_ROOT}/IBMTealeaf/SDKs/iOS/Debug/Tealeaf.framework/TLFResources.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EOCoreSettings.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TLFResources.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CXASDKDev/Pods-CXASDKDev-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		63F4A9162044B7D000A535C8 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1166,21 +1144,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CXASDKDev/Pods-CXASDKDev-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		63F4A9172044B7D000A535C8 /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CXASDKDev/Pods-CXASDKDev-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		71479A73C0E38E7AA67F2696 /* [CP] Check Pods Manifest.lock */ = {
@@ -1223,8 +1186,8 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CXA/Pods-CXA-frameworks.sh",
-				"${PODS_ROOT}/EOCoreDebug/SDKs/iOS/Debug/EOCore.framework",
-				"${PODS_ROOT}/IBMTealeafDebug/SDKs/iOS/Debug/Tealeaf.framework",
+				"${PODS_ROOT}/EOCore/SDKs/iOS/Release/EOCore.framework",
+				"${PODS_ROOT}/IBMTealeaf/SDKs/iOS/Release/Tealeaf.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -1260,8 +1223,8 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CXA/Pods-CXA-resources.sh",
-				"${PODS_ROOT}/EOCoreDebug/SDKs/iOS/Debug/EOCore.framework/EOCoreSettings.bundle",
-				"${PODS_ROOT}/IBMTealeafDebug/SDKs/iOS/Debug/Tealeaf.framework/TLFResources.bundle",
+				"${PODS_ROOT}/EOCore/SDKs/iOS/Release/EOCore.framework/EOCoreSettings.bundle",
+				"${PODS_ROOT}/IBMTealeaf/SDKs/iOS/Release/Tealeaf.framework/TLFResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
