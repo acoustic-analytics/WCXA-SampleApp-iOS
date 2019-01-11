@@ -19,7 +19,9 @@
     // Do any additional setup after loading the view.
     
     self.navigationItem.title = @"Support";
-    self.webView.delegate = self;
+    self.webView = [[WKWebView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:self.webView];
+    self.webView.navigationDelegate = self;
     self.activityView = [[UIActivityIndicatorView alloc]
                                              initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
     self.activityView.center=self.view.center;

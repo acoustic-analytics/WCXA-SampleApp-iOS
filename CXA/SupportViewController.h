@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SupportViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIWebView *webView;
+@interface SupportViewController : UIViewController<WKNavigationDelegate>
+@property (strong, nonatomic) WKWebView *webView;
+
 
 @end
