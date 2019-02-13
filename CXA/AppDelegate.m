@@ -57,7 +57,12 @@
     else {
         // use default config from plist
     }
-    [[TLFApplicationHelper sharedInstance] enableTealeafFramework];
+    
+    id userConsentObj = [[NSUserDefaults standardUserDefaults] objectForKey:@"CXA_APP_HAS_USER_CONSENTED_FOR_BEHAVIORAL_DATA_COLLECTION"];
+    if( userConsentObj && ([userConsentObj boolValue] == YES) )
+    {
+        [[TLFApplicationHelper sharedInstance] enableTealeafFramework];
+    }
     
     // Logging custom event for ibmId in each session
     //    if (dict[@"ibmId"]) {

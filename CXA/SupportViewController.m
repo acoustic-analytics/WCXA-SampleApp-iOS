@@ -13,12 +13,17 @@
 @end
 
 @implementation SupportViewController
-
+@synthesize destinationURL;
+@synthesize navigationTitle;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
     self.navigationItem.title = @"Support";
+    if( navigationTitle && [navigationTitle length] > 0 )
+    {
+        self.navigationItem.title = navigationTitle;
+    }
     self.webView = [[WKWebView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:self.webView];
     self.webView.navigationDelegate = self;
@@ -29,6 +34,10 @@
     [self.view addSubview:self.activityView];
     
     NSString *fullURL = @"https://www.ibm.com/communities/analytics/customer-experience-analytics/";
+    if( destinationURL && [destinationURL length] > 0 )
+    {
+        fullURL = destinationURL;
+    }
     NSURL *url = [NSURL URLWithString:fullURL];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     [self.webView loadRequest:requestObj];
@@ -45,5 +54,4 @@
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
     [self.activityView stopAnimating];
 }
-
 @end

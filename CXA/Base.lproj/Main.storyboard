@@ -685,6 +685,71 @@
             </objects>
             <point key="canvasLocation" x="4786.875" y="1030.9859154929577"/>
         </scene>
+        <!--End User Consent View Controller-->
+        <scene sceneID="F8c-RA-GQm">
+            <objects>
+                <viewController id="UQp-T3-9Pa" customClass="EndUserConsentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ksw-KM-uNb"/>
+                        <viewControllerLayoutGuide type="bottom" id="oKq-HM-89e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Ni-5D-VG1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rv3-6q-ojh">
+                                <rect key="frame" x="93" y="269" width="134" height="30"/>
+                                <state key="normal" title="Read Privacy Policy"/>
+                                <connections>
+                                    <action selector="readPrivacyPolicy:" destination="UQp-T3-9Pa" eventType="touchUpInside" id="tWh-CD-Bal"/>
+                                    <segue destination="Uhb-Ff-21l" kind="show" id="87x-9g-0QN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNn-4O-E3G">
+                                <rect key="frame" x="16" y="72" width="288" height="164"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="164" id="5uW-G2-d6a"/>
+                                </constraints>
+                                <string key="text">To improve the application experience, this application captures all the user interactions and behaviors anolymously. Would you like to help make this application better ?</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="v63-lS-2FP">
+                                <rect key="frame" x="81" y="379" width="51" height="31"/>
+                                <connections>
+                                    <action selector="onOptInOutSwitch:" destination="UQp-T3-9Pa" eventType="touchUpInside" id="HCO-8M-hmZ"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opt-In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4HT-zn-nZS">
+                                <rect key="frame" x="190" y="384" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XNn-4O-E3G" firstAttribute="leading" secondItem="1Ni-5D-VG1" secondAttribute="leadingMargin" id="37p-Ea-gIl"/>
+                            <constraint firstItem="v63-lS-2FP" firstAttribute="top" secondItem="rv3-6q-ojh" secondAttribute="bottom" constant="80" id="4iO-7J-drq"/>
+                            <constraint firstItem="v63-lS-2FP" firstAttribute="centerY" secondItem="4HT-zn-nZS" secondAttribute="centerY" id="4rq-GA-7PZ"/>
+                            <constraint firstItem="XNn-4O-E3G" firstAttribute="top" secondItem="Ksw-KM-uNb" secondAttribute="bottom" constant="8" symbolic="YES" id="BJ2-uP-x1p"/>
+                            <constraint firstItem="oKq-HM-89e" firstAttribute="top" secondItem="v63-lS-2FP" secondAttribute="bottom" constant="109" id="Db5-hm-BXl"/>
+                            <constraint firstItem="XNn-4O-E3G" firstAttribute="centerX" secondItem="rv3-6q-ojh" secondAttribute="centerX" id="FJc-4v-35e"/>
+                            <constraint firstItem="4HT-zn-nZS" firstAttribute="leading" secondItem="v63-lS-2FP" secondAttribute="trailing" constant="60" id="jCd-ZD-Jrs"/>
+                            <constraint firstItem="v63-lS-2FP" firstAttribute="leading" secondItem="1Ni-5D-VG1" secondAttribute="leadingMargin" constant="65" id="jqh-h0-xFg"/>
+                            <constraint firstItem="XNn-4O-E3G" firstAttribute="trailing" secondItem="1Ni-5D-VG1" secondAttribute="trailingMargin" id="l7C-iZ-RHY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="optInOutLabel" destination="4HT-zn-nZS" id="s23-SX-KNc"/>
+                        <outlet property="theConsentSwitch" destination="v63-lS-2FP" id="O6R-Se-cFc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mcN-1O-r37" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4104.375" y="1868.661971830986"/>
+        </scene>
         <!--Item List View Controller-->
         <scene sceneID="TTS-FA-Elq">
             <objects>
@@ -2428,6 +2493,7 @@
                         <segue destination="gjj-OK-uYJ" kind="show" identifier="ordersSegue" id="wz1-Pc-leZ"/>
                         <segue destination="x8u-sE-Fzh" kind="show" identifier="aboutSegue" id="NZH-Ra-FTr"/>
                         <segue destination="Uhb-Ff-21l" kind="show" identifier="supportSegue" id="WvV-4A-00T"/>
+                        <segue destination="UQp-T3-9Pa" kind="show" identifier="endUserConsentSegue" id="pBW-Wd-nz2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nTt-wc-71A" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2481,8 +2547,9 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="OLE-7O-cz6"/>
-        <segue reference="9XF-IL-2wO"/>
+        <segue reference="87x-9g-0QN"/>
+        <segue reference="Hnk-65-5a8"/>
         <segue reference="wz1-Pc-leZ"/>
-        <segue reference="VgB-rE-bO1"/>
+        <segue reference="jJB-LO-htZ"/>
     </inferredMetricsTieBreakers>
 </document>

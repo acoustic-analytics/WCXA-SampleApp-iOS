@@ -57,7 +57,53 @@
 - (void) viewWillAppear:(BOOL)animated {
     self.recentItemsArray = [[AppManager sharedInstance] getMostRecent];
 }
-
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    id userConsentObj = [[NSUserDefaults standardUserDefaults] objectForKey:@"CXA_APP_HAS_USER_CONSENTED_FOR_BEHAVIORAL_DATA_COLLECTION"];
+    if( userConsentObj == nil )
+    {
+        [self showUserConsentAlert];
+    }
+}
+-(void)showUserConsentAlert
+{
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Help Us Make The App Better !"
+                                                                   message:@"Would you like to help us make this application better by letting it collect application usage data ? \n\n\n To read detail Privacy Policy or to change Opt-In settings; go to More > Settings"
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* yesAction = [UIAlertAction actionWithTitle:@"Yes, Opt-In" style:UIAlertActionStyleDefault
+                                                      handler:^(UIAlertAction * action) { [self consentGranted]; }];
+    [alert addAction:yesAction];
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"Opt-Out and don't ask me again" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {[self consentNotGranted];}];
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
+}
+-(void)consentGranted
+{
+    [[NSUserDefaults standardUserDefaults] setObject:@YES forKey:@"CXA_APP_HAS_USER_CONSENTED_FOR_BEHAVIORAL_DATA_COLLECTION"];
+    [[TLFApplicationHelper sharedInstance] enableTealeafFramework];
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Thank You !"
+                                                                   message:@"If you change your mind, you may opt-out anytime from settings panel"
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                     handler:^(UIAlertAction * action) {}];
+    [alert addAction:okAction];
+    [self presentViewController:alert animated:YES completion:nil];
+}
+-(void)consentNotGranted
+{
+    [[NSUserDefaults standardUserDefaults] setObject:@NO forKey:@"CXA_APP_HAS_USER_CONSENTED_FOR_BEHAVIORAL_DATA_COLLECTION"];
+    [[TLFApplicationHelper sharedInstance] disableTealeafFramework];
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Thank You !"
+                                                                   message:@"If you change your mind, you may opt-in anytime from settings panel"
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                     handler:^(UIAlertAction * action) {}];
+    [alert addAction:okAction];
+    [self presentViewController:alert animated:YES completion:nil];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }

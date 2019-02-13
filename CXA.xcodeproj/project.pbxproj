@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		1D26895F1B373BF9DF5EBFF7 /* Pods_CXASDKDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D56FE5383520CD9F14BC184 /* Pods_CXASDKDev.framework */; };
 		38C908C2027063402EDF35F2 /* Pods_CXA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56903F3EDD631F15AC7EB6AE /* Pods_CXA.framework */; };
-		6386C4752044B9050036D782 /* libEOCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6386C4772044B9050036D782 /* libEOCore.a */; };
+		63626A2122135467007A8864 /* EndUserConsentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63626A2022135467007A8864 /* EndUserConsentViewController.m */; };
+		63626A2222135467007A8864 /* EndUserConsentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63626A2022135467007A8864 /* EndUserConsentViewController.m */; };
 		6386C4762044B9050036D782 /* libTealeaf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6386C4782044B9050036D782 /* libTealeaf.a */; };
 		63F4A8A02044B7D000A535C8 /* CXAEnv.m in Sources */ = {isa = PBXBuildFile; fileRef = F60180B41E37DF92000615D2 /* CXAEnv.m */; };
 		63F4A8A12044B7D000A535C8 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = F656CB301DC809560098152E /* Item.m */; };
@@ -245,6 +246,8 @@
 		0D56FE5383520CD9F14BC184 /* Pods_CXASDKDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CXASDKDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		146BE34FE53050738149CA9D /* Pods-CXASDKDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXASDKDev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CXASDKDev/Pods-CXASDKDev.debug.xcconfig"; sourceTree = "<group>"; };
 		56903F3EDD631F15AC7EB6AE /* Pods_CXA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CXA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63626A1F22135467007A8864 /* EndUserConsentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EndUserConsentViewController.h; sourceTree = "<group>"; };
+		63626A2022135467007A8864 /* EndUserConsentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EndUserConsentViewController.m; sourceTree = "<group>"; };
 		6386C4772044B9050036D782 /* libEOCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libEOCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6386C4782044B9050036D782 /* libTealeaf.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTealeaf.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F4A91B2044B7D000A535C8 /* CXASDKDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CXASDKDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -420,7 +423,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6386C4752044B9050036D782 /* libEOCore.a in Frameworks */,
 				6386C4762044B9050036D782 /* libTealeaf.a in Frameworks */,
 				63F4A8CD2044B7D000A535C8 /* SafariServices.framework in Frameworks */,
 				63F4A8CE2044B7D000A535C8 /* CoreGraphics.framework in Frameworks */,
@@ -541,6 +543,8 @@
 				F6F3C0461EDF53A30062F1CD /* TutorialPages */,
 				F6C4A1321EE603F900D3F2C4 /* PreHomeViewController.h */,
 				F6C4A1331EE603F900D3F2C4 /* PreHomeViewController.m */,
+				63626A1F22135467007A8864 /* EndUserConsentViewController.h */,
+				63626A2022135467007A8864 /* EndUserConsentViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -1281,6 +1285,7 @@
 				63F4A8C32044B7D000A535C8 /* CartViewController.m in Sources */,
 				63F4A8C42044B7D000A535C8 /* OrderItem.m in Sources */,
 				63F4A8C52044B7D000A535C8 /* CartItem.m in Sources */,
+				63626A2222135467007A8864 /* EndUserConsentViewController.m in Sources */,
 				63F4A8C62044B7D000A535C8 /* ItemListViewController.m in Sources */,
 				63F4A8C72044B7D000A535C8 /* SignupViewController.m in Sources */,
 				63F4A8C82044B7D000A535C8 /* TopCategories.m in Sources */,
@@ -1332,6 +1337,7 @@
 				F625BD1A1DB94335007D78FE /* CartViewController.m in Sources */,
 				F6650F9F1DD3D1C40007E7F2 /* OrderItem.m in Sources */,
 				F656CB3B1DC92B660098152E /* CartItem.m in Sources */,
+				63626A2122135467007A8864 /* EndUserConsentViewController.m in Sources */,
 				F671E95D1DC29A3A00E8E355 /* ItemListViewController.m in Sources */,
 				F625BD1D1DB9A455007D78FE /* SignupViewController.m in Sources */,
 				F65008A91E8ED7F200908051 /* TopCategories.m in Sources */,

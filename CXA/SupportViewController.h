@@ -10,6 +10,8 @@
 
 @interface SupportViewController : UIViewController<WKNavigationDelegate>
 @property (strong, nonatomic) WKWebView *webView;
+@property (strong, nonatomic) NSString *destinationURL;
+@property (strong, nonatomic) NSString *navigationTitle;
 
 
 @end
