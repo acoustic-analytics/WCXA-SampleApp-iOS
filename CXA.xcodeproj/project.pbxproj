@@ -242,6 +242,37 @@
 		F6F3C0501EDF64B50062F1CD /* CXAEnv.png in Resources */ = {isa = PBXBuildFile; fileRef = F6F3C04F1EDF64B50062F1CD /* CXAEnv.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9934FCD5222F612200CE1B78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9934FCCB222F612200CE1B78 /* Tealeaf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 66FD56BA1A3A4BD600E3827C;
+			remoteInfo = Tealeaf;
+		};
+		9934FCD7222F612200CE1B78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9934FCCB222F612200CE1B78 /* Tealeaf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 99610C0A20A10F3100F412B8;
+			remoteInfo = TealeafReactNative;
+		};
+		9934FCD9222F612200CE1B78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9934FCCB222F612200CE1B78 /* Tealeaf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 66FD56C51A3A4BD600E3827C;
+			remoteInfo = TealeafTests;
+		};
+		9934FCDB222F612200CE1B78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9934FCCB222F612200CE1B78 /* Tealeaf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 66FD56E01A3A4F7C00E3827C;
+			remoteInfo = TealeafTestApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		0D56FE5383520CD9F14BC184 /* Pods_CXASDKDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CXASDKDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		146BE34FE53050738149CA9D /* Pods-CXASDKDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXASDKDev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CXASDKDev/Pods-CXASDKDev.debug.xcconfig"; sourceTree = "<group>"; };
@@ -253,6 +284,7 @@
 		63F4A91B2044B7D000A535C8 /* CXASDKDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CXASDKDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F4A91C2044B7D000A535C8 /* CXASDKDev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CXASDKDev-Info.plist"; path = "/Users/sdamale/dev/publicgit/WCXA-SampleApp-iOS/CXASDKDev-Info.plist"; sourceTree = "<absolute>"; };
 		89AF9D78A3CF0E920332DD5C /* Pods-CXA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXA.release.xcconfig"; path = "Pods/Target Support Files/Pods-CXA/Pods-CXA.release.xcconfig"; sourceTree = "<group>"; };
+		9934FCCB222F612200CE1B78 /* Tealeaf.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Tealeaf.xcodeproj; path = "../iOS-SDK/iOSSrc/Tealeaf/Tealeaf.xcodeproj"; sourceTree = "<group>"; };
 		B67952BBF0B40D9303E2B6CE /* Pods-CXA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CXA/Pods-CXA.debug.xcconfig"; sourceTree = "<group>"; };
 		F40A81C6AD9CF85AECD4D652 /* Pods-CXASDKDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXASDKDev.release.xcconfig"; path = "Pods/Target Support Files/Pods-CXASDKDev/Pods-CXASDKDev.release.xcconfig"; sourceTree = "<group>"; };
 		F60180B01E37DA59000615D2 /* CXAEnvViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXAEnvViewController.h; sourceTree = "<group>"; };
@@ -470,6 +502,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9934FCCC222F612200CE1B78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9934FCD6222F612200CE1B78 /* libTealeaf.a */,
+				9934FCD8222F612200CE1B78 /* libTealeafReactNative.a */,
+				9934FCDA222F612200CE1B78 /* TealeafTests.xctest */,
+				9934FCDC222F612200CE1B78 /* TealeafTestApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		F625BCEF1DB93C4E007D78FE = {
 			isa = PBXGroup;
 			children = (
@@ -672,6 +715,7 @@
 			children = (
 				6386C4772044B9050036D782 /* libEOCore.a */,
 				6386C4782044B9050036D782 /* libTealeaf.a */,
+				9934FCCB222F612200CE1B78 /* Tealeaf.xcodeproj */,
 				F6C4A11A1EE0C29200D3F2C4 /* SafariServices.framework */,
 				F6A4CD3D1DEA7527002925B5 /* CoreGraphics.framework */,
 				F6A4CD3B1DEA7520002925B5 /* CFNetwork.framework */,
@@ -903,12 +947,13 @@
 				ORGANIZATIONNAME = IBM;
 				TargetAttributes = {
 					63F4A89C2044B7D000A535C8 = {
-						DevelopmentTeam = PETKK2G752;
+						DevelopmentTeam = PP64RT7P8Z;
+						ProvisioningStyle = Automatic;
 					};
 					F625BCF71DB93C4E007D78FE = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = PETKK2G752;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = PP64RT7P8Z;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -923,6 +968,12 @@
 			mainGroup = F625BCEF1DB93C4E007D78FE;
 			productRefGroup = F625BCF91DB93C4E007D78FE /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9934FCCC222F612200CE1B78 /* Products */;
+					ProjectRef = 9934FCCB222F612200CE1B78 /* Tealeaf.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F625BCF71DB93C4E007D78FE /* CXA */,
@@ -930,6 +981,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9934FCD6222F612200CE1B78 /* libTealeaf.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTealeaf.a;
+			remoteRef = 9934FCD5222F612200CE1B78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9934FCD8222F612200CE1B78 /* libTealeafReactNative.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTealeafReactNative.a;
+			remoteRef = 9934FCD7222F612200CE1B78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9934FCDA222F612200CE1B78 /* TealeafTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TealeafTests.xctest;
+			remoteRef = 9934FCD9222F612200CE1B78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9934FCDC222F612200CE1B78 /* TealeafTestApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TealeafTestApp.app;
+			remoteRef = 9934FCDB222F612200CE1B78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		63F4A8D82044B7D000A535C8 /* Resources */ = {
@@ -1375,9 +1457,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Chanikya Mandapathi (J9EX6CAY5D)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMPRESS_PNG_FILES = NO;
-				DEVELOPMENT_TEAM = PETKK2G752;
+				DEVELOPMENT_TEAM = PP64RT7P8Z;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1397,10 +1480,10 @@
 					"-ObjC",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.wce.cxa;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.wce.cxa.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a3069214-1692-4c54-80d0-e601cc326099";
-				PROVISIONING_PROFILE_SPECIFIER = "IBM Watson Customer Experience CXA App - Dev Prof";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1411,9 +1494,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Chanikya Mandapathi (J9EX6CAY5D)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMPRESS_PNG_FILES = NO;
-				DEVELOPMENT_TEAM = PETKK2G752;
+				DEVELOPMENT_TEAM = PP64RT7P8Z;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1433,10 +1517,10 @@
 					"-ObjC",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.wce.cxa;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.wce.cxa.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a3069214-1692-4c54-80d0-e601cc326099";
-				PROVISIONING_PROFILE_SPECIFIER = "IBM Watson Customer Experience CXA App - Dev Prof";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1547,9 +1631,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Chanikya Mandapathi (J9EX6CAY5D)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMPRESS_PNG_FILES = NO;
-				DEVELOPMENT_TEAM = PETKK2G752;
+				DEVELOPMENT_TEAM = PP64RT7P8Z;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1569,10 +1654,10 @@
 					"-ObjC",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.wce.cxa;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.wce.cxa.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a3069214-1692-4c54-80d0-e601cc326099";
-				PROVISIONING_PROFILE_SPECIFIER = "IBM Watson Customer Experience CXA App - Dev Prof";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1583,9 +1668,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Chanikya Mandapathi (J9EX6CAY5D)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMPRESS_PNG_FILES = NO;
-				DEVELOPMENT_TEAM = PETKK2G752;
+				DEVELOPMENT_TEAM = PP64RT7P8Z;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1605,10 +1691,10 @@
 					"-ObjC",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.wce.cxa;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.wce.cxa.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a3069214-1692-4c54-80d0-e601cc326099";
-				PROVISIONING_PROFILE_SPECIFIER = "IBM Watson Customer Experience CXA App - Dev Prof";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
