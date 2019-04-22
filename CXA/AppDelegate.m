@@ -21,7 +21,15 @@
 
 @implementation AppDelegate
 
-
+-(void)printCookies
+{
+    for (NSHTTPCookie *theCookie in [[NSHTTPCookieStorage sharedHTTPCookieStorage]cookies]) {
+        NSString* theCookieName = [theCookie valueForKey:NSHTTPCookieName];
+        NSString* theCookieValue = [theCookie valueForKey:NSHTTPCookieValue];
+        NSString* theCookieDomain = [theCookie valueForKey:NSHTTPCookieDomain];
+        NSLog(@"Name: %@, Value: %@, Domain: %@", theCookieName, theCookieValue, theCookieDomain);
+    }
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     setenv("EODebug", "1", 1);
@@ -59,6 +67,9 @@
     }
     
     id userConsentObj = [[NSUserDefaults standardUserDefaults] objectForKey:@"CXA_APP_HAS_USER_CONSENTED_FOR_BEHAVIORAL_DATA_COLLECTION"];
+    NSLog(@"Inside didFinishLaunchingWithOptions : User Consent from User Defaults : %@", userConsentObj);
+    NSLog(@"Inside didFinishLaunchingWithOptions : Printing Cookies");
+    [self printCookies];
     if( userConsentObj && ([userConsentObj boolValue] == YES) )
     {
         [[TLFApplicationHelper sharedInstance] enableTealeafFramework];
@@ -98,6 +109,10 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    id userConsentObj = [[NSUserDefaults standardUserDefaults] objectForKey:@"CXA_APP_HAS_USER_CONSENTED_FOR_BEHAVIORAL_DATA_COLLECTION"];
+    NSLog(@"Inside applicationWillTerminate : User Consent from User Defaults : %@", userConsentObj);
+    NSLog(@"Inside applicationWillTerminate : Printing Cookies");
+    [self printCookies];
 }
 
 
