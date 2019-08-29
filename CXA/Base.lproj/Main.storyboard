@@ -369,6 +369,7 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8U-Hn-A8p">
                                                     <rect key="frame" x="19" y="11" width="282" height="38"/>
                                                     <color key="backgroundColor" red="0.48627450980392156" green="0.7803921568627451" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <accessibility key="accessibilityConfiguration" hint="accessibility Add To Cart Hint" identifier="accAddToCartBtnId" label="accAddToCartLabel"/>
                                                     <state key="normal" title="Add to Cart">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -1276,6 +1277,7 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAU-4b-2zB">
                                                     <rect key="frame" x="15" y="7.5" width="290" height="45"/>
                                                     <color key="backgroundColor" red="0.48627450979999998" green="0.78039215689999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <accessibility key="accessibilityConfiguration" hint="accessibility proceed to checkout hint" identifier="accProceedToCheckoutBtnId" label="accProceedToCheckoutLabel"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="45" id="J0T-WV-WfK"/>
                                                     </constraints>
@@ -2550,6 +2552,6 @@
         <segue reference="87x-9g-0QN"/>
         <segue reference="Hnk-65-5a8"/>
         <segue reference="wz1-Pc-leZ"/>
-        <segue reference="jJB-LO-htZ"/>
+        <segue reference="fyb-uQ-nx5"/>
     </inferredMetricsTieBreakers>
 </document>
