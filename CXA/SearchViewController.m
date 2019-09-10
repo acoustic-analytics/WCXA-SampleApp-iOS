@@ -154,9 +154,15 @@
 }
 
 - (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar {
-//    [[TLFCustomEvent sharedInstance] logScreenLayoutWithViewController:self];
 }
 
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
+{
+    /* Uncomment following line if you want to test/try one type 2 multiple type 10
+     Optionally set _searchfieldeditingchanged to 1 in TealeafAdvanceConfig.json if you want to see the event. If not, you are going to see "Dynamic Update" step in replay in any case.
+     */
+     //[[TLFCustomEvent sharedInstance] logScreenLayoutDynamicUpdateWithViewController:self andRelatedViews:@[searchBar]];
+}
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"itemListSegue"]) {
