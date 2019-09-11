@@ -291,5 +291,8 @@
     self.cityTextField.text = @"San Francisco";
     self.stateTextField.text = @"CA";
     self.zipCodeTextField.text = @"95105";
+    /* dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.1 * NSEC_PER_SEC),dispatch_get_main_queue(), ^{
+        [[TLFCustomEvent sharedInstance] logScreenLayoutDynamicUpdateWithViewController:self andRelatedViews:nil];
+    }); */
 }
 @end
