@@ -12,8 +12,7 @@
 int main(int argc, char * argv[]) {
     @autoreleasepool {
         NSString *tealeafSDK = NSStringFromClass([TLFApplication class]);
-        return UIApplicationMain(argc, argv, tealeafSDK, NSStringFromClass([AppDelegate
-                                                                            class]));
+        return UIApplicationMain(argc, argv, tealeafSDK, NSStringFromClass([AppDelegate class]));
         
         //return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
