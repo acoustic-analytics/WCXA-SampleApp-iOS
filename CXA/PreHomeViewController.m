@@ -21,6 +21,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    /*Print document dir*/
+    {
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *documentsDirectory = [paths objectAtIndex:0];
+        if( documentsDirectory )
+        {
+            NSLog(@"Cached files : %@", documentsDirectory);
+        }
+    }
+    
     self.tryCXAOutlet.layer.cornerRadius = 5;
     self.tryCXAOutlet.layer.shadowOffset = CGSizeMake(3, 3);
     self.configBtnOutlet.layer.cornerRadius = 5;
