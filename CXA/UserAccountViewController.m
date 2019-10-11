@@ -58,9 +58,12 @@
     }
     [self.tableView reloadData];
     
-    if (![AppManager sharedInstance].skipAccountVCLogging) {
+    /*commenting this out to avoid double screen logging
+    if (![AppManager sharedInstance].skipAccountVCLogging)
+    {
         [[TLFCustomEvent sharedInstance] logScreenLayoutWithViewController:self andDelay:0.5f]; // Manually logging the screen
     }
+    */
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
