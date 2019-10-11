@@ -129,5 +129,8 @@
         okAction.enabled = orgTextField.text.length > 0;
     }
 }
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+}
 
 @end
