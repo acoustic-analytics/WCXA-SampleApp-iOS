@@ -14,6 +14,7 @@
 #import "Realm/RLMRealm.h"
 #import "Item.h"
 #import "CXAEnv.h"
+#import  <objc/runtime.h>
 
 @interface AppDelegate ()
 
@@ -30,11 +31,27 @@
         NSLog(@"Name: %@, Value: %@, Domain: %@", theCookieName, theCookieValue, theCookieDomain);
     }
 }
+-(void)temporaryFixUpForTextLayoutView
+{
+    if( @available(iOS 13.2, *) )
+    {
+    }
+    else
+    {
+        const char *className = "_UITextLayoutView";
+        Class cls = objc_getClass(className);
+        if (cls == nil)
+        {
+            cls = objc_allocateClassPair([UIView class], className, 0);
+            objc_registerClassPair(cls);
+        }
+    }
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     setenv("EODebug", "1", 1);
     setenv("TLF_DEBUG", "1", 1);
-    
+    [self temporaryFixUpForTextLayoutView];
     // Migrates Realm old data if there is a change in Realm data model
     [[RealmDataController sharedInstance] migrateRealmData];
     
