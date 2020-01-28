@@ -47,6 +47,68 @@
         }
     }
 }
+/*
+    This sample method assumes that you want to enable Tealeaf SDK for :
+    
+        iPhones and iPads
+        Running any OS version between 10.0 and 13.3.0.
+        But NOT Running OS version 13.0.0 and 13.0.1
+   
+    You may choose to alter these conditions in your application as per your need.
+ 
+*/
+-(BOOL)isValidOSVersionAndPlatform
+{
+    BOOL bIsValid = YES;
+    UIUserInterfaceIdiom currentUIIdiom = [[UIDevice currentDevice] userInterfaceIdiom];
+    /*Decide if you want to enable Tealeaf on both iPhone and iPad or one of them*/
+    if( (currentUIIdiom == UIUserInterfaceIdiomPhone) || (currentUIIdiom == UIUserInterfaceIdiomPad) )
+    {
+        NSOperatingSystemVersion minVer = (NSOperatingSystemVersion){10, 0, 0};
+        NSOperatingSystemVersion maxVer = (NSOperatingSystemVersion){13, 3, 0};
+        NSOperatingSystemVersion skipVers[2] = {{13, 0, 0},{13, 0, 1}};
+        /*Check if at least min version*/
+        if( [[NSProcessInfo processInfo] isOperatingSystemAtLeastVersion:minVer] )
+        {
+            /*Check for max version*/
+            NSOperatingSystemVersion currentVer = [[NSProcessInfo processInfo] operatingSystemVersion];
+            if( currentVer.majorVersion > maxVer.majorVersion )
+            {
+                bIsValid = NO;
+            }
+            else if( currentVer.minorVersion > maxVer.minorVersion )
+            {
+                bIsValid = NO;
+            }
+            else if( currentVer.patchVersion > maxVer.patchVersion )
+            {
+                bIsValid = NO;
+            }/*End of Check for max version*/
+            else/*Check for skip version list*/
+            {
+                int arraySize = sizeof(skipVers)/sizeof(skipVers[0]);
+                for(int skipVerCounter = 0; skipVerCounter < arraySize; skipVerCounter++)
+                {
+                    NSOperatingSystemVersion skipVer = skipVers[skipVerCounter];
+                    if( (currentVer.majorVersion == skipVer.majorVersion) && (currentVer.minorVersion == skipVer.minorVersion) && (currentVer.patchVersion == skipVer.patchVersion) )
+                    {
+                        bIsValid = NO;
+                        break;
+                    }
+                }
+            }/*End of Check for skip version list*/
+        }
+        else
+        {
+            bIsValid = NO;
+        }
+    }
+    else
+    {
+        bIsValid = NO;
+    }
+    return bIsValid;
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     setenv("EODebug", "1", 1);
@@ -89,7 +151,10 @@
     [self printCookies];
     if( userConsentObj && ([userConsentObj boolValue] == YES) )
     {
-        [[TLFApplicationHelper sharedInstance] enableTealeafFramework];
+        if( [self isValidOSVersionAndPlatform] )
+        {
+            [[TLFApplicationHelper sharedInstance] enableTealeafFramework];
+        }
     }
     
     // Logging custom event for ibmId in each session
