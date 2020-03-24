@@ -19,7 +19,6 @@
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"About CXA";
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -35,4 +34,47 @@
 }
 */
 
+- (IBAction)logAllConnections:(id)sender {
+    @try
+    {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            [self logConnectionGood];
+        });
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            [self logConnectionBad];
+        });
+    }
+    @catch (NSException *exception)
+    {
+        
+    }
+}
+-(void)logConnectionGood
+{
+    NSURLRequest* request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.acoustic.co"]];
+    NSURLSession *sharedSyncSession = [NSURLSession sharedSession];
+    NSURLSessionDataTask *task = [sharedSyncSession dataTaskWithRequest:request
+                                            completionHandler:
+                                  ^(NSData *data, NSURLResponse *response, NSError *error)
+    {
+        NSLog(@"Logged GET good message");
+                                  
+    }];
+    
+    [task resume];
+}
+-(void)logConnectionBad
+{
+    NSURLRequest* request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.theserverthatdoesnotexistandwillneverexist.com"]];
+    NSURLSession *sharedSyncSession = [NSURLSession sharedSession];
+    NSURLSessionDataTask *task = [sharedSyncSession dataTaskWithRequest:request
+                                            completionHandler:
+                                  ^(NSData *data, NSURLResponse *response, NSError *error)
+    {
+        NSLog(@"Logged GET bad   message");
+                                  
+    }];
+    
+    [task resume];
+}
 @end

@@ -12,7 +12,7 @@ target 'CXA' do
   pod 'Realm'
   
   # If you want to use release binaries of Tealeaf please uncomment the following line and comment out the pod 'IBMTealeafDebug' line
-  pod 'IBMTealeaf'
+  pod 'IBMTealeafDebug'
 
 end
 
