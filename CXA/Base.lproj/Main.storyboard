@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="RXf-Q0-M5g">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="RXf-Q0-M5g">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -1341,7 +1341,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mpX-Y6-2x1" userLabel="contentView">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="516"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" tag="9001" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name on card" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jeO-sg-hwW">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name on card" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jeO-sg-hwW">
                                                 <rect key="frame" x="16" y="50" width="288" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="MGx-Ve-rsJ"/>
@@ -1661,7 +1661,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Udd-e1-QEy">
-                                <rect key="frame" x="106" y="461" width="109" height="30"/>
+                                <rect key="frame" x="105.5" y="461" width="109" height="30"/>
                                 <state key="normal" title="Log Connection"/>
                                 <connections>
                                     <action selector="logAllConnections:" destination="x8u-sE-Fzh" eventType="touchUpInside" id="fVv-Af-hDr"/>
@@ -2533,13 +2533,6 @@
             <point key="canvasLocation" x="2431.875" y="-400.35211267605632"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="CXAEnv.png" width="750" height="1334"/>
-        <image name="Replay_screenshot.png" width="1126" height="658"/>
-        <image name="cart.png" width="26" height="26"/>
-        <image name="first" width="30" height="30"/>
-        <image name="shop.png" width="26" height="26"/>
-    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="OLE-7O-cz6"/>
         <segue reference="87x-9g-0QN"/>
@@ -2547,4 +2540,11 @@
         <segue reference="wz1-Pc-leZ"/>
         <segue reference="fyb-uQ-nx5"/>
     </inferredMetricsTieBreakers>
+    <resources>
+        <image name="CXAEnv.png" width="750" height="1334"/>
+        <image name="Replay_screenshot.png" width="1126" height="658"/>
+        <image name="cart.png" width="26" height="26"/>
+        <image name="first" width="30" height="30"/>
+        <image name="shop.png" width="26" height="26"/>
+    </resources>
 </document>

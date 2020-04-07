@@ -65,7 +65,7 @@
     if( (currentUIIdiom == UIUserInterfaceIdiomPhone) || (currentUIIdiom == UIUserInterfaceIdiomPad) )
     {
         NSOperatingSystemVersion minVer = (NSOperatingSystemVersion){10, 0, 0};
-        NSOperatingSystemVersion maxVer = (NSOperatingSystemVersion){13, 3, 0};
+        NSOperatingSystemVersion maxVer = (NSOperatingSystemVersion){13, 4, 0};
         NSOperatingSystemVersion skipVers[2] = {{13, 0, 0},{13, 0, 1}};
         /*Check if at least min version*/
         if( [[NSProcessInfo processInfo] isOperatingSystemAtLeastVersion:minVer] )
