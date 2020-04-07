@@ -15,6 +15,7 @@
 #import "CXAEnvViewController.h"
 #import "TopCategories.h"
 #import "Category.h"
+#import "AppDelegate.h"
 
 @interface HomeViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView  *tableView;
@@ -60,10 +61,17 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    id userConsentObj = [[NSUserDefaults standardUserDefaults] objectForKey:@"CXA_APP_HAS_USER_CONSENTED_FOR_BEHAVIORAL_DATA_COLLECTION"];
-    if( userConsentObj == nil )
+    if( [AppDelegate isValidOSVersionAndPlatform] == YES )
     {
-        [self showUserConsentAlert];
+        id userConsentObj = [[NSUserDefaults standardUserDefaults] objectForKey:@"CXA_APP_HAS_USER_CONSENTED_FOR_BEHAVIORAL_DATA_COLLECTION"];
+        if( userConsentObj == nil )
+        {
+            [self showUserConsentAlert];
+        }
+    }
+    else
+    {
+        [[TLFApplicationHelper sharedInstance] disableTealeafFramework];
     }
 }
 -(void)showUserConsentAlert

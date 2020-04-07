@@ -9,6 +9,7 @@
 #import "PreHomeViewController.h"
 #import "CXAEnvViewController.h"
 #import "CXAEnv.h"
+#import "AppDelegate.h"
 
 @interface PreHomeViewController () <UIPageViewControllerDataSource>
 @property (nonatomic, strong) UIPageViewController *pageViewController;
@@ -70,7 +71,10 @@
 
 - (IBAction)startDefaultConfig:(id)sender {
     [self setDefaultConfig];
-    [[TLFApplicationHelper sharedInstance] enableTealeafFramework];
+    if( [AppDelegate isValidOSVersionAndPlatform] == YES )
+    {
+        [[TLFApplicationHelper sharedInstance] enableTealeafFramework];
+    }
     [self performSegueWithIdentifier:@"startSessionSegue" sender:self];
 }
 
@@ -91,7 +95,10 @@
     else {
         [self setDefaultConfig];
     }
-    [[TLFApplicationHelper sharedInstance] enableTealeafFramework];
+    if( [AppDelegate isValidOSVersionAndPlatform] == YES )
+    {
+        [[TLFApplicationHelper sharedInstance] enableTealeafFramework];
+    }
     [self performSegueWithIdentifier:@"startSessionSegue" sender:self];
 }
 

@@ -8,6 +8,7 @@
 
 #import "EndUserConsentViewController.h"
 #import "SupportViewController.h"
+#import "AppDelegate.h"
 
 @interface EndUserConsentViewController ()
 @property (strong, nonatomic) IBOutlet UILabel *optInOutLabel;
@@ -21,14 +22,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    id userConsentObj = [[NSUserDefaults standardUserDefaults] objectForKey:@"CXA_APP_HAS_USER_CONSENTED_FOR_BEHAVIORAL_DATA_COLLECTION"];
-    if( (userConsentObj == nil) || ([userConsentObj boolValue] == NO) )
+    if( [AppDelegate isValidOSVersionAndPlatform] == YES )
     {
-        [theConsentSwitch setOn:NO];
+        id userConsentObj = [[NSUserDefaults standardUserDefaults] objectForKey:@"CXA_APP_HAS_USER_CONSENTED_FOR_BEHAVIORAL_DATA_COLLECTION"];
+        if( (userConsentObj == nil) || ([userConsentObj boolValue] == NO) )
+        {
+            [theConsentSwitch setOn:NO];
+        }
+        else
+        {
+            [theConsentSwitch setOn:YES];
+        }
     }
     else
     {
-        [theConsentSwitch setOn:YES];
+        [theConsentSwitch setEnabled:NO];
     }
 }
 

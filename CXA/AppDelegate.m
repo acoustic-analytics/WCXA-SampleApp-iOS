@@ -57,7 +57,7 @@
     You may choose to alter these conditions in your application as per your need.
  
 */
--(BOOL)isValidOSVersionAndPlatform
++(BOOL)isValidOSVersionAndPlatform
 {
     BOOL bIsValid = YES;
     UIUserInterfaceIdiom currentUIIdiom = [[UIDevice currentDevice] userInterfaceIdiom];
@@ -151,7 +151,7 @@
     [self printCookies];
     if( userConsentObj && ([userConsentObj boolValue] == YES) )
     {
-        if( [self isValidOSVersionAndPlatform] )
+        if( [AppDelegate isValidOSVersionAndPlatform] )
         {
             [[TLFApplicationHelper sharedInstance] enableTealeafFramework];
         }
