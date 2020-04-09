@@ -64,9 +64,9 @@
     /*Decide if you want to enable Tealeaf on both iPhone and iPad or one of them*/
     if( (currentUIIdiom == UIUserInterfaceIdiomPhone) || (currentUIIdiom == UIUserInterfaceIdiomPad) )
     {
-        NSOperatingSystemVersion minVer = (NSOperatingSystemVersion){10, 0, 0};
-        NSOperatingSystemVersion maxVer = (NSOperatingSystemVersion){13, 4, 0};
-        NSOperatingSystemVersion skipVers[2] = {{13, 0, 0},{13, 0, 1}};
+        NSOperatingSystemVersion minVer = (NSOperatingSystemVersion){11, 0, 0};
+        NSOperatingSystemVersion maxVer = (NSOperatingSystemVersion){13, 4, 1};
+        NSOperatingSystemVersion skipVers[2] = {{11, 0, 0},{12, 1, 1}};
         /*Check if at least min version*/
         if( [[NSProcessInfo processInfo] isOperatingSystemAtLeastVersion:minVer] )
         {
@@ -76,15 +76,22 @@
             {
                 bIsValid = NO;
             }
-            else if( currentVer.minorVersion > maxVer.minorVersion )
+            else if( currentVer.majorVersion == maxVer.majorVersion )
             {
-                bIsValid = NO;
+                if( currentVer.minorVersion > maxVer.minorVersion )
+                {
+                    bIsValid = NO;
+                }
+                else if( currentVer.minorVersion == maxVer.minorVersion )
+                {
+                    if( currentVer.patchVersion > maxVer.minorVersion )
+                    {
+                        bIsValid = NO;
+                    }
+                }
             }
-            else if( currentVer.patchVersion > maxVer.patchVersion )
-            {
-                bIsValid = NO;
-            }/*End of Check for max version*/
-            else/*Check for skip version list*/
+            /*End of Check for max version*/
+            /*Check for skip version list*/
             {
                 int arraySize = sizeof(skipVers)/sizeof(skipVers[0]);
                 for(int skipVerCounter = 0; skipVerCounter < arraySize; skipVerCounter++)
