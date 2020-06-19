@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		1D26895F1B373BF9DF5EBFF7 /* Pods_CXASDKDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D56FE5383520CD9F14BC184 /* Pods_CXASDKDev.framework */; };
 		38C908C2027063402EDF35F2 /* Pods_CXA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56903F3EDD631F15AC7EB6AE /* Pods_CXA.framework */; };
+		6317C9D8249D3B9B00B840F0 /* NSString+TealeafCryptography.m in Sources */ = {isa = PBXBuildFile; fileRef = 6317C9D7249D3B9B00B840F0 /* NSString+TealeafCryptography.m */; };
+		6317C9D9249D3B9B00B840F0 /* NSString+TealeafCryptography.m in Sources */ = {isa = PBXBuildFile; fileRef = 6317C9D7249D3B9B00B840F0 /* NSString+TealeafCryptography.m */; };
+		6317C9DD249D431100B840F0 /* NSData+TealeafCryptography.m in Sources */ = {isa = PBXBuildFile; fileRef = 6317C9DC249D431100B840F0 /* NSData+TealeafCryptography.m */; };
+		6317C9DE249D431100B840F0 /* NSData+TealeafCryptography.m in Sources */ = {isa = PBXBuildFile; fileRef = 6317C9DC249D431100B840F0 /* NSData+TealeafCryptography.m */; };
 		63626A2122135467007A8864 /* EndUserConsentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63626A2022135467007A8864 /* EndUserConsentViewController.m */; };
 		63626A2222135467007A8864 /* EndUserConsentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63626A2022135467007A8864 /* EndUserConsentViewController.m */; };
 		6386C4762044B9050036D782 /* libTealeaf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6386C4782044B9050036D782 /* libTealeaf.a */; };
@@ -248,6 +252,10 @@
 		0D56FE5383520CD9F14BC184 /* Pods_CXASDKDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CXASDKDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		146BE34FE53050738149CA9D /* Pods-CXASDKDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXASDKDev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CXASDKDev/Pods-CXASDKDev.debug.xcconfig"; sourceTree = "<group>"; };
 		56903F3EDD631F15AC7EB6AE /* Pods_CXA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CXA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6317C9D6249D3B9B00B840F0 /* NSString+TealeafCryptography.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+TealeafCryptography.h"; sourceTree = "<group>"; };
+		6317C9D7249D3B9B00B840F0 /* NSString+TealeafCryptography.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+TealeafCryptography.m"; sourceTree = "<group>"; };
+		6317C9DB249D431100B840F0 /* NSData+TealeafCryptography.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+TealeafCryptography.h"; sourceTree = "<group>"; };
+		6317C9DC249D431100B840F0 /* NSData+TealeafCryptography.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+TealeafCryptography.m"; sourceTree = "<group>"; };
 		63626A1F22135467007A8864 /* EndUserConsentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EndUserConsentViewController.h; sourceTree = "<group>"; };
 		63626A2022135467007A8864 /* EndUserConsentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EndUserConsentViewController.m; sourceTree = "<group>"; };
 		6386C4772044B9050036D782 /* libEOCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libEOCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -476,6 +484,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6317C9DA249D3BA300B840F0 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				6317C9D6249D3B9B00B840F0 /* NSString+TealeafCryptography.h */,
+				6317C9D7249D3B9B00B840F0 /* NSString+TealeafCryptography.m */,
+				6317C9DB249D431100B840F0 /* NSData+TealeafCryptography.h */,
+				6317C9DC249D431100B840F0 /* NSData+TealeafCryptography.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		F625BCEF1DB93C4E007D78FE = {
 			isa = PBXGroup;
 			children = (
@@ -501,6 +520,7 @@
 		F625BCFA1DB93C4E007D78FE /* CXA */ = {
 			isa = PBXGroup;
 			children = (
+				6317C9DA249D3BA300B840F0 /* Categories */,
 				F625BCFE1DB93C4E007D78FE /* AppDelegate.h */,
 				F625BCFF1DB93C4E007D78FE /* AppDelegate.m */,
 				F671E94F1DC2553300E8E355 /* AppManager.h */,
@@ -1133,7 +1153,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CXASDKDev/Pods-CXASDKDev-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-CXASDKDev/Pods-CXASDKDev-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -1142,7 +1162,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CXASDKDev/Pods-CXASDKDev-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CXASDKDev/Pods-CXASDKDev-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		63F4A9162044B7D000A535C8 /* 📦 Embed Pods Frameworks */ = {
@@ -1199,9 +1219,9 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CXA/Pods-CXA-frameworks.sh",
-				"${PODS_ROOT}/EOCore/SDKs/iOS/Release/EOCore.framework",
-				"${PODS_ROOT}/IBMTealeaf/SDKs/iOS/Release/Tealeaf.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-CXA/Pods-CXA-frameworks.sh",
+				"${PODS_ROOT}/EOCoreDebug/SDKs/iOS/Debug/EOCore.framework",
+				"${PODS_ROOT}/IBMTealeafDebug/SDKs/iOS/Debug/Tealeaf.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -1212,7 +1232,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CXA/Pods-CXA-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CXA/Pods-CXA-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BE277E3443004DA8C70CEA1C /* 📦 Copy Pods Resources */ = {
@@ -1236,9 +1256,9 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CXA/Pods-CXA-resources.sh",
-				"${PODS_ROOT}/EOCore/SDKs/iOS/Release/EOCore.framework/EOCoreSettings.bundle",
-				"${PODS_ROOT}/IBMTealeaf/SDKs/iOS/Release/Tealeaf.framework/TLFResources.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-CXA/Pods-CXA-resources.sh",
+				"${PODS_ROOT}/EOCoreDebug/SDKs/iOS/Debug/EOCore.framework/EOCoreSettings.bundle",
+				"${PODS_ROOT}/IBMTealeafDebug/SDKs/iOS/Debug/Tealeaf.framework/TLFResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -1247,7 +1267,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CXA/Pods-CXA-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CXA/Pods-CXA-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1274,6 +1294,7 @@
 				63F4A8AE2044B7D000A535C8 /* ItemDetailViewController.m in Sources */,
 				63F4A8AF2044B7D000A535C8 /* ItemTitleTableViewCell.m in Sources */,
 				63F4A8B02044B7D000A535C8 /* ItemAddToCartTableViewCell.m in Sources */,
+				6317C9DE249D431100B840F0 /* NSData+TealeafCryptography.m in Sources */,
 				63F4A8B12044B7D000A535C8 /* User.m in Sources */,
 				63F4A8B22044B7D000A535C8 /* CategoryTableViewCell.m in Sources */,
 				63F4A8B32044B7D000A535C8 /* UserAccountTableViewCell.m in Sources */,
@@ -1293,6 +1314,7 @@
 				63F4A8C12044B7D000A535C8 /* ItemImageTableViewCell.m in Sources */,
 				63F4A8C22044B7D000A535C8 /* HomeViewController.m in Sources */,
 				63F4A8C32044B7D000A535C8 /* CartViewController.m in Sources */,
+				6317C9D9249D3B9B00B840F0 /* NSString+TealeafCryptography.m in Sources */,
 				63F4A8C42044B7D000A535C8 /* OrderItem.m in Sources */,
 				63F4A8C52044B7D000A535C8 /* CartItem.m in Sources */,
 				63626A2222135467007A8864 /* EndUserConsentViewController.m in Sources */,
@@ -1326,6 +1348,7 @@
 				F671E9011DBED3A800E8E355 /* ItemDetailViewController.m in Sources */,
 				F671E8F11DBED32200E8E355 /* ItemTitleTableViewCell.m in Sources */,
 				F671E8FD1DBED38100E8E355 /* ItemAddToCartTableViewCell.m in Sources */,
+				6317C9DD249D431100B840F0 /* NSData+TealeafCryptography.m in Sources */,
 				F656CB351DC915380098152E /* User.m in Sources */,
 				F6A5BD6E1E2998B100AFCEF9 /* CategoryTableViewCell.m in Sources */,
 				F673E52B1DD4DCD7008CA7E9 /* UserAccountTableViewCell.m in Sources */,
@@ -1345,6 +1368,7 @@
 				F671E8F41DBED33700E8E355 /* ItemImageTableViewCell.m in Sources */,
 				F625BD031DB93C4E007D78FE /* HomeViewController.m in Sources */,
 				F625BD1A1DB94335007D78FE /* CartViewController.m in Sources */,
+				6317C9D8249D3B9B00B840F0 /* NSString+TealeafCryptography.m in Sources */,
 				F6650F9F1DD3D1C40007E7F2 /* OrderItem.m in Sources */,
 				F656CB3B1DC92B660098152E /* CartItem.m in Sources */,
 				63626A2122135467007A8864 /* EndUserConsentViewController.m in Sources */,
