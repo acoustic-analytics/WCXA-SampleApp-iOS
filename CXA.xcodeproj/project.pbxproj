@@ -936,8 +936,8 @@
 					};
 					F625BCF71DB93C4E007D78FE = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = PETKK2G752;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = QXQ67VKX2B;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -1581,9 +1581,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Chanikya Mandapathi (J9EX6CAY5D)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMPRESS_PNG_FILES = NO;
-				DEVELOPMENT_TEAM = PETKK2G752;
+				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1592,7 +1593,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CXA/CXA-Prefix.pch";
 				INFOPLIST_FILE = CXA/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1605,8 +1606,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.wce.cxa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a3069214-1692-4c54-80d0-e601cc326099";
-				PROVISIONING_PROFILE_SPECIFIER = "IBM Watson Customer Experience CXA App - Dev Prof";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1617,9 +1617,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Chanikya Mandapathi (J9EX6CAY5D)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMPRESS_PNG_FILES = NO;
-				DEVELOPMENT_TEAM = PETKK2G752;
+				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1628,7 +1629,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CXA/CXA-Prefix.pch";
 				INFOPLIST_FILE = CXA/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1641,8 +1642,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.wce.cxa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a3069214-1692-4c54-80d0-e601cc326099";
-				PROVISIONING_PROFILE_SPECIFIER = "IBM Watson Customer Experience CXA App - Dev Prof";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
