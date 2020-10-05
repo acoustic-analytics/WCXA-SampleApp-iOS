@@ -13,7 +13,7 @@ This file is provided as sample only. You should implement your own categories t
 
 #import "NSString+TealeafCryptography.h"
 #import "NSData+TealeafCryptography.h"
-NSString *key = @""; //@"<please enter 32 byte long key here>";
+NSString *key = @""; //@"<please enter 32 byte long key here. For example: 0123456789abcdef>";
 @implementation NSString (TealeafCryptography)
 -(NSString*) encryptTealeafData
 {
@@ -22,7 +22,7 @@ NSString *key = @""; //@"<please enter 32 byte long key here>";
     {
         NSData *orgStringData = [self dataUsingEncoding:NSUTF8StringEncoding];
         NSData *encryptedData = [orgStringData AES256EncryptWithKey:key];
-        encryptedString = [[NSString alloc] initWithData:encryptedData encoding:NSUTF8StringEncoding];
+        encryptedString = [encryptedData base64EncodedStringWithOptions:0];
     }
     return encryptedString;
 }
@@ -31,7 +31,7 @@ NSString *key = @""; //@"<please enter 32 byte long key here>";
     NSString* decryptedString = self;
     if( (key != nil) && ([key length] > 0) && ([self length] > 0) )
     {
-        NSData *encryptedData = [self dataUsingEncoding:NSUTF8StringEncoding];
+        NSData *encryptedData = [[NSData alloc] initWithBase64EncodedString:self options:0];
         NSData *orgStringData = [encryptedData AES256DecryptWithKey:key];
         decryptedString = [[NSString alloc] initWithData:orgStringData encoding:NSUTF8StringEncoding];
     }

@@ -23,13 +23,16 @@ This file is provided as sample only. You should implement your own categories t
     NSUInteger dataLen = [self length];
     size_t dataOutLen = dataLen + kCCBlockSizeAES128;
     void *dataOut = malloc(dataOutLen);
-    size_t encryptedDataSize = 0;
-    CCCryptorStatus encryptionStatus = CCCrypt(kCCEncrypt, kCCAlgorithmAES128, kCCOptionPKCS7Padding, keyStr, kCCKeySizeAES256, NULL, [self bytes], dataLen, dataOut, dataOutLen, &encryptedDataSize);
-    if( encryptionStatus == kCCSuccess )
+    if( dataOut != NULL )
     {
-        encryptedData = [NSData dataWithBytesNoCopy:dataOut length:encryptedDataSize];
+        size_t encryptedDataSize = 0;
+        CCCryptorStatus encryptionStatus = CCCrypt(kCCEncrypt, kCCAlgorithmAES128, kCCOptionPKCS7Padding, keyStr, kCCKeySizeAES256, NULL, [self bytes], dataLen, dataOut, dataOutLen, &encryptedDataSize);
+        if( encryptionStatus == kCCSuccess )
+        {
+            encryptedData = [NSData dataWithBytes:dataOut length:encryptedDataSize];
+        }
+        free(dataOut);
     }
-    free(dataOut);
     return encryptedData;
 }
 - (NSData *)AES256DecryptWithKey:(NSString *)key
@@ -41,13 +44,16 @@ This file is provided as sample only. You should implement your own categories t
     NSUInteger dataLen = [self length];
     size_t dataOutLen = dataLen + kCCBlockSizeAES128;
     void *dataOut = malloc(dataOutLen);
-    size_t decryptedDataSize = 0;
-    CCCryptorStatus decryptionStatus = CCCrypt(kCCDecrypt, kCCAlgorithmAES128, kCCOptionPKCS7Padding, keyStr, kCCKeySizeAES256, NULL, [self bytes], dataLen, dataOut, dataOutLen, &decryptedDataSize);
-    if( decryptionStatus == kCCSuccess )
+    if( dataOut != NULL )
     {
-        decryptedData = [NSData dataWithBytesNoCopy:dataOut length:decryptedDataSize];
+        size_t decryptedDataSize = 0;
+        CCCryptorStatus decryptionStatus = CCCrypt(kCCDecrypt, kCCAlgorithmAES128, kCCOptionPKCS7Padding, keyStr, kCCKeySizeAES256, NULL, [self bytes], dataLen, dataOut, dataOutLen, &decryptedDataSize);
+        if( decryptionStatus == kCCSuccess )
+        {
+            decryptedData = [NSData dataWithBytes:dataOut length:decryptedDataSize];
+        }
+        free(dataOut);
     }
-    free(dataOut);
     return decryptedData;
 }
 @end
