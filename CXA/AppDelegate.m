@@ -84,7 +84,7 @@
                 }
                 else if( currentVer.minorVersion == maxVer.minorVersion )
                 {
-                    if( currentVer.patchVersion > maxVer.minorVersion )
+                    if( currentVer.patchVersion > maxVer.patchVersion )
                     {
                         bIsValid = NO;
                     }
