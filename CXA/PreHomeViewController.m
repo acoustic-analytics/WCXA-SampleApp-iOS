@@ -9,6 +9,7 @@
 #import "PreHomeViewController.h"
 #import "CXAEnvViewController.h"
 #import "CXAEnv.h"
+#import "AppDelegate.h"
 
 @interface PreHomeViewController () <UIPageViewControllerDataSource>
 @property (nonatomic, strong) UIPageViewController *pageViewController;
@@ -20,6 +21,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    /*Print document dir*/
+    {
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *documentsDirectory = [paths objectAtIndex:0];
+        if( documentsDirectory )
+        {
+            NSLog(@"Cached files : %@", documentsDirectory);
+        }
+    }
     
     self.tryCXAOutlet.layer.cornerRadius = 5;
     self.tryCXAOutlet.layer.shadowOffset = CGSizeMake(3, 3);
@@ -60,7 +71,10 @@
 
 - (IBAction)startDefaultConfig:(id)sender {
     [self setDefaultConfig];
-    [[TLFApplicationHelper sharedInstance] enableTealeafFramework];
+    if( [AppDelegate isValidOSVersionAndPlatform] == YES )
+    {
+        [[TLFApplicationHelper sharedInstance] enableTealeafFramework];
+    }
     [self performSegueWithIdentifier:@"startSessionSegue" sender:self];
 }
 
@@ -81,7 +95,10 @@
     else {
         [self setDefaultConfig];
     }
-    [[TLFApplicationHelper sharedInstance] enableTealeafFramework];
+    if( [AppDelegate isValidOSVersionAndPlatform] == YES )
+    {
+        [[TLFApplicationHelper sharedInstance] enableTealeafFramework];
+    }
     [self performSegueWithIdentifier:@"startSessionSegue" sender:self];
 }
 

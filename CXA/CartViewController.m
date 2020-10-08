@@ -39,14 +39,6 @@
                                                  name:@"CartItemUpdated"
                                                object:nil];
 }
-
-- (void) viewWillAppear:(BOOL)animated {
-}
-
-- (void) viewDidDisappear:(BOOL)animated {
-    
-}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }

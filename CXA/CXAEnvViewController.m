@@ -9,6 +9,7 @@
 #import "CXAEnvViewController.h"
 #import "CXAEnv.h"
 #import "Realm/RLMRealm.h"
+#import "AppDelegate.h"
 
 @interface CXAEnvViewController () <UITextFieldDelegate>
 
@@ -150,20 +151,22 @@
         [realm beginWriteTransaction];
         [realm addOrUpdateObject:env];
         [realm commitWriteTransaction];
-        
-        [[TLFApplicationHelper sharedInstance] setPostMessageUrl:self.postMessageTextField.text];
-        [[TLFApplicationHelper sharedInstance] setKillSwitchUrl:self.killSwitchTextField.text];
-        [[TLFApplicationHelper sharedInstance] setConfigurableItem:@"AppKey" value:self.appKeyTextField.text];
-        
-        if ([[TLFApplicationHelper sharedInstance] isTLFEnabled]) {
-            [[TLFApplicationHelper sharedInstance] startNewTLFSession];   // start new session when environment changed..
+        if( [AppDelegate isValidOSVersionAndPlatform] == YES )
+        {
+            [[TLFApplicationHelper sharedInstance] setPostMessageUrl:self.postMessageTextField.text];
+            [[TLFApplicationHelper sharedInstance] setKillSwitchUrl:self.killSwitchTextField.text];
+            [[TLFApplicationHelper sharedInstance] setConfigurableItem:@"AppKey" value:self.appKeyTextField.text];
+            
+            if ([[TLFApplicationHelper sharedInstance] isTLFEnabled]) {
+                [[TLFApplicationHelper sharedInstance] startNewTLFSession];   // start new session when environment changed..
+            }
+            else {
+                [[TLFApplicationHelper sharedInstance] enableTealeafFramework];   // enabling framework with default CXA environment
+            }
+            self.sessionIdLabel.text = [[TLFApplicationHelper sharedInstance] currentSessionId];
+            
+            [AppManager sharedInstance].openConfigSession = YES;
         }
-        else {
-            [[TLFApplicationHelper sharedInstance] enableTealeafFramework];   // enabling framework with default CXA environment
-        }
-        self.sessionIdLabel.text = [[TLFApplicationHelper sharedInstance] currentSessionId];
-        
-        [AppManager sharedInstance].openConfigSession = YES;
     }
 
     if (isIBMIdChanged)

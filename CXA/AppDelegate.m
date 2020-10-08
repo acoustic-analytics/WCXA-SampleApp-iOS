@@ -14,6 +14,7 @@
 #import "Realm/RLMRealm.h"
 #import "Item.h"
 #import "CXAEnv.h"
+#import  <objc/runtime.h>
 
 @interface AppDelegate ()
 
@@ -30,11 +31,96 @@
         NSLog(@"Name: %@, Value: %@, Domain: %@", theCookieName, theCookieValue, theCookieDomain);
     }
 }
+-(void)temporaryFixUpForTextLayoutView
+{
+    if( @available(iOS 13.2, *) )
+    {
+    }
+    else
+    {
+        const char *className = "_UITextLayoutView";
+        Class cls = objc_getClass(className);
+        if (cls == nil)
+        {
+            cls = objc_allocateClassPair([UIView class], className, 0);
+            objc_registerClassPair(cls);
+        }
+    }
+}
+/*
+    This sample method assumes that you want to enable Tealeaf SDK for :
+    
+        iPhones and iPads
+        Running any OS version between 10.0 and 13.3.0.
+        But NOT Running OS version 13.0.0 and 13.0.1
+   
+    You may choose to alter these conditions in your application as per your need.
+ 
+*/
++(BOOL)isValidOSVersionAndPlatform
+{
+    BOOL bIsValid = YES;
+    UIUserInterfaceIdiom currentUIIdiom = [[UIDevice currentDevice] userInterfaceIdiom];
+    /*Decide if you want to enable Tealeaf on both iPhone and iPad or one of them*/
+    if( (currentUIIdiom == UIUserInterfaceIdiomPhone) || (currentUIIdiom == UIUserInterfaceIdiomPad) )
+    {
+        NSOperatingSystemVersion minVer = (NSOperatingSystemVersion){11, 0, 0};
+        NSOperatingSystemVersion maxVer = (NSOperatingSystemVersion){14, 0, 1};
+        NSOperatingSystemVersion skipVers[2] = {{11, 0, 0},{12, 1, 1}};
+        /*Check if at least min version*/
+        if( [[NSProcessInfo processInfo] isOperatingSystemAtLeastVersion:minVer] )
+        {
+            /*Check for max version*/
+            NSOperatingSystemVersion currentVer = [[NSProcessInfo processInfo] operatingSystemVersion];
+            if( currentVer.majorVersion > maxVer.majorVersion )
+            {
+                bIsValid = NO;
+            }
+            else if( currentVer.majorVersion == maxVer.majorVersion )
+            {
+                if( currentVer.minorVersion > maxVer.minorVersion )
+                {
+                    bIsValid = NO;
+                }
+                else if( currentVer.minorVersion == maxVer.minorVersion )
+                {
+                    if( currentVer.patchVersion > maxVer.patchVersion )
+                    {
+                        bIsValid = NO;
+                    }
+                }
+            }
+            /*End of Check for max version*/
+            /*Check for skip version list*/
+            {
+                int arraySize = sizeof(skipVers)/sizeof(skipVers[0]);
+                for(int skipVerCounter = 0; skipVerCounter < arraySize; skipVerCounter++)
+                {
+                    NSOperatingSystemVersion skipVer = skipVers[skipVerCounter];
+                    if( (currentVer.majorVersion == skipVer.majorVersion) && (currentVer.minorVersion == skipVer.minorVersion) && (currentVer.patchVersion == skipVer.patchVersion) )
+                    {
+                        bIsValid = NO;
+                        break;
+                    }
+                }
+            }/*End of Check for skip version list*/
+        }
+        else
+        {
+            bIsValid = NO;
+        }
+    }
+    else
+    {
+        bIsValid = NO;
+    }
+    return bIsValid;
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     setenv("EODebug", "1", 1);
     setenv("TLF_DEBUG", "1", 1);
-    
+    [self temporaryFixUpForTextLayoutView];
     // Migrates Realm old data if there is a change in Realm data model
     [[RealmDataController sharedInstance] migrateRealmData];
     
@@ -72,7 +158,10 @@
     [self printCookies];
     if( userConsentObj && ([userConsentObj boolValue] == YES) )
     {
-        [[TLFApplicationHelper sharedInstance] enableTealeafFramework];
+        if( [AppDelegate isValidOSVersionAndPlatform] )
+        {
+            [[TLFApplicationHelper sharedInstance] enableTealeafFramework];
+        }
     }
     
     // Logging custom event for ibmId in each session
