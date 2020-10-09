@@ -18,7 +18,7 @@
 
 @interface PaymentViewController () <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-
+@property (strong, nonatomic) UISwipeGestureRecognizer *missingGestureTestPrefillButtonSwipeGesture;
 @end
 @interface UIColor(HexString)
 + (UIColor *) colorWithHexString: (NSString *) hexString;
@@ -92,8 +92,24 @@
     self.cardNumber.delegate = self;
     self.expYearTextField.delegate = self;
     self.expMonth.delegate = self;
-}
+    
+    /*Missing gesture delegate*/
+    
+    self.missingGestureTestPrefillButtonSwipeGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleMissingGestureSingleSwipeGesture:)];
+    self.missingGestureTestPrefillButtonSwipeGesture.direction = UISwipeGestureRecognizerDirectionRight;
+    [self.prefillBtnOutlet addGestureRecognizer:self.missingGestureTestPrefillButtonSwipeGesture];
+    self.missingGestureTestPrefillButtonSwipeGesture.delegate = self;
 
+    /*End Of Missing gesture delegate*/
+}
+-(void)handleMissingGestureSingleSwipeGesture:(UITapGestureRecognizer *)tapGestureRecognizer
+{
+}
+//Commentout this code .. This will make GesturesViewController class to have a gesture recognizer delegate; but Not have shouldRecognizeSimultaneouslyWithGestureRecognizer method present. When Tealeaf SDK notices this; it will inject this method for the app, like its in the documentation.
+//- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer;
+//{
+//   return YES;
+//}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }

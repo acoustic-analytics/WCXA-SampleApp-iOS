@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PaymentViewController : UIViewController
+@interface PaymentViewController : UIViewController<UIGestureRecognizerDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *cardholderName;
 @property (weak, nonatomic) IBOutlet UITextField *cardNumber;
 @property (weak, nonatomic) IBOutlet UITextField *expMonth;
