@@ -1,2 +1,3 @@
+github "realm/realm-cocoa"
 binary "https://raw.githubusercontent.com/acoustic-analytics/IBMTealeaf/master/Tealeaf.json" >= 10.6.36
 binary "https://raw.githubusercontent.com/acoustic-analytics/EOCore/master/EOCore.json" >= 2.3.24

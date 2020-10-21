@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -128,6 +128,9 @@
 		63F4A9132044B7D000A535C8 /* officeLaptop.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB8881DCB910800E039A6 /* officeLaptop.png */; };
 		994701E0252E576600F02A5C /* TLFResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 994701DF252E576600F02A5C /* TLFResources.bundle */; };
 		994701E4252E577100F02A5C /* EOCoreSettings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 994701E3252E577100F02A5C /* EOCoreSettings.bundle */; };
+		99DE2D2B253FBE8A007F1CD6 /* Tealeaf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99DE2D29253FBE8A007F1CD6 /* Tealeaf.framework */; };
+		99DE2D2C253FBE8A007F1CD6 /* EOCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99DE2D2A253FBE8A007F1CD6 /* EOCore.framework */; };
+		99DE2D30253FBFA6007F1CD6 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99DE2D2F253FBFA6007F1CD6 /* Realm.framework */; };
 		F60180B21E37DA59000615D2 /* CXAEnvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F60180B11E37DA59000615D2 /* CXAEnvViewController.m */; };
 		F60180B51E37DF92000615D2 /* CXAEnv.m in Sources */ = {isa = PBXBuildFile; fileRef = F60180B41E37DF92000615D2 /* CXAEnv.m */; };
 		F625BCFD1DB93C4E007D78FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F625BCFC1DB93C4E007D78FE /* main.m */; };
@@ -272,12 +275,12 @@
 		6317C9DC249D431100B840F0 /* NSData+TealeafCryptography.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+TealeafCryptography.m"; sourceTree = "<group>"; };
 		63626A1F22135467007A8864 /* EndUserConsentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EndUserConsentViewController.h; sourceTree = "<group>"; };
 		63626A2022135467007A8864 /* EndUserConsentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EndUserConsentViewController.m; sourceTree = "<group>"; };
-		63CCF32A2411A44B00CB3722 /* TealeafAnomaly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TealeafAnomaly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F4A91B2044B7D000A535C8 /* CXASDKDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CXASDKDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		99470178252E501B00F02A5C /* libEOCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libEOCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		994701DF252E576600F02A5C /* TLFResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TLFResources.bundle; path = "../iOS-SDK/iOSSrc/Tealeaf/Tealeaf/TLFResources.bundle"; sourceTree = "<group>"; };
 		994701E3252E577100F02A5C /* EOCoreSettings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = EOCoreSettings.bundle; path = "../iOS-SDK/iOSSrc/EOCore/EOCore/EOCoreSettings.bundle"; sourceTree = "<group>"; };
-		996E17BF252ED31E000D8419 /* EOCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EOCore.framework; path = Pods/EOCoreDebug/SDKs/iOS/Debug/EOCore.framework; sourceTree = "<group>"; };
+		99DE2D29253FBE8A007F1CD6 /* Tealeaf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Tealeaf.framework; path = Carthage/Build/iOS/Tealeaf.framework; sourceTree = "<group>"; };
+		99DE2D2A253FBE8A007F1CD6 /* EOCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EOCore.framework; path = Carthage/Build/iOS/EOCore.framework; sourceTree = "<group>"; };
+		99DE2D2F253FBFA6007F1CD6 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		F60180B01E37DA59000615D2 /* CXAEnvViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXAEnvViewController.h; sourceTree = "<group>"; };
 		F60180B11E37DA59000615D2 /* CXAEnvViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXAEnvViewController.m; sourceTree = "<group>"; };
 		F60180B31E37DF92000615D2 /* CXAEnv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXAEnv.h; sourceTree = "<group>"; };
@@ -461,6 +464,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99DE2D2B253FBE8A007F1CD6 /* Tealeaf.framework in Frameworks */,
+				99DE2D2C253FBE8A007F1CD6 /* EOCore.framework in Frameworks */,
+				99DE2D30253FBFA6007F1CD6 /* Realm.framework in Frameworks */,
 				F6C4A11B1EE0C29200D3F2C4 /* SafariServices.framework in Frameworks */,
 				F6A4CD3E1DEA7527002925B5 /* CoreGraphics.framework in Frameworks */,
 				F6A4CD3C1DEA7520002925B5 /* CFNetwork.framework in Frameworks */,
@@ -687,13 +693,13 @@
 		F671E91E1DC11A8800E8E355 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				99470178252E501B00F02A5C /* libEOCore.a */,
-				63CCF32A2411A44B00CB3722 /* TealeafAnomaly.framework */,
+				99DE2D2F253FBFA6007F1CD6 /* Realm.framework */,
+				99DE2D2A253FBE8A007F1CD6 /* EOCore.framework */,
+				99DE2D29253FBE8A007F1CD6 /* Tealeaf.framework */,
 				F6C4A11A1EE0C29200D3F2C4 /* SafariServices.framework */,
 				F6A4CD3D1DEA7527002925B5 /* CoreGraphics.framework */,
 				F6A4CD3B1DEA7520002925B5 /* CFNetwork.framework */,
 				F671E92B1DC11AD400E8E355 /* CoreTelephony.framework */,
-				996E17BF252ED31E000D8419 /* EOCore.framework */,
 				F671E9291DC11AC500E8E355 /* WebKit.framework */,
 				F671E9271DC11AC000E8E355 /* CoreLocation.framework */,
 				F671E9251DC11AAC00E8E355 /* libz.tbd */,
@@ -891,6 +897,7 @@
 				F625BCF41DB93C4E007D78FE /* Sources */,
 				F625BCF51DB93C4E007D78FE /* Frameworks */,
 				F625BCF61DB93C4E007D78FE /* Resources */,
+				99DE2D1E253E7156007F1CD6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1078,6 +1085,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		99DE2D1E253E7156007F1CD6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/EOCore.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Tealeaf.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/EOCore.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Tealeaf.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Realm.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		63F4A89F2044B7D000A535C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -1227,7 +1261,10 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CXA/CXA-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/CXASDKDev-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CXA",
@@ -1262,7 +1299,10 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CXA/CXA-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/CXASDKDev-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CXA",
@@ -1394,12 +1434,16 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/CXA",
 					"$(PROJECT_DIR)/Pods/EOCoreDebug/SDKs/iOS/Debug",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CXA/CXA-Prefix.pch";
 				INFOPLIST_FILE = CXA/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CXA",
@@ -1431,12 +1475,16 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/CXA",
 					"$(PROJECT_DIR)/Pods/EOCoreDebug/SDKs/iOS/Debug",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CXA/CXA-Prefix.pch";
 				INFOPLIST_FILE = CXA/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CXA",
