@@ -56,7 +56,7 @@
     [self.searchController.searchBar setBarTintColor:[UIColor colorWithRed:0.25 green:0.47 blue:0.75 alpha:1.0]];
     [self.searchController.searchBar setTintColor:[UIColor whiteColor]];
     [self.view setBackgroundColor:[UIColor colorWithRed:0.25 green:0.47 blue:0.75 alpha:1.0]];
-    self.searchController.dimsBackgroundDuringPresentation = NO;
+    self.searchController.obscuresBackgroundDuringPresentation = NO;
     
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, -20, self.view.frame.size.width, 21)];
     view.backgroundColor = [UIColor colorWithRed:0.25 green:0.47 blue:0.75 alpha:1.0];
