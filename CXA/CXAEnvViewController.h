@@ -16,7 +16,7 @@
 
 @interface CXAEnvViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIView *contentView;
-@property (weak, nonatomic) IBOutlet UITextField *ibmIdTextField;
+@property (weak, nonatomic) IBOutlet UITextField *acoIdTextField;
 @property (weak, nonatomic) IBOutlet UITextField *appKeyTextField;
 @property (weak, nonatomic) IBOutlet UITextField *postMessageTextField;
 @property (weak, nonatomic) IBOutlet UITextField *killSwitchTextField;
