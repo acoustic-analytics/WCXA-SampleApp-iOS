@@ -39,7 +39,7 @@
     [self.activityView startAnimating];
     [self.view addSubview:self.activityView];
     
-    NSString *fullURL = @"https://www.ibm.com/communities/analytics/customer-experience-analytics/";
+    NSString *fullURL = @"https://acoustic.com/products/experience-analytics/";
     if( destinationURL && [destinationURL length] > 0 )
     {
         fullURL = destinationURL;
