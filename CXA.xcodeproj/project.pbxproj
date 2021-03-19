@@ -937,7 +937,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = IBM;
+				ORGANIZATIONNAME = Acoustic;
 				TargetAttributes = {
 					63F4A89C2044B7D000A535C8 = {
 						DevelopmentTeam = QXQ67VKX2B;
