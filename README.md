@@ -1,6 +1,6 @@
 # WCXA-SampleApp-iOS
 
-WCXA-SampleApp-iOS is one of the sample iOS application that shows how to integrate [IBM Tealeaf SDK](https://github.com/ibm-watson-cxa/IBMTealeaf) with any iOS Application.
+WCXA-SampleApp-iOS is one of the sample iOS application that shows how to integrate [IBM Tealeaf SDK](https://github.com/acoustic-analytics/IBMTealeaf) with any iOS Application.
 
 
 ## Getting Started
