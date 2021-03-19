@@ -3,7 +3,7 @@
 //  CXAUITests
 //
 //  Created by Chanikya on 1/18/18.
-//  Copyright © 2018 IBM. All rights reserved.
+//  Copyright (C) 2018 Acoustic, L.P. All rights reserved.
 //
 
 import XCTest
