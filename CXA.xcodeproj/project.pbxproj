@@ -995,7 +995,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = IBM;
+				ORGANIZATIONNAME = Acoustic;
 				TargetAttributes = {
 					63F4A89C2044B7D000A535C8 = {
 <<<<<<< HEAD
@@ -1484,14 +1484,10 @@
 					"-ObjC",
 					"$(inherited)",
 				);
-<<<<<<< HEAD
-				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.wce.cxa.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-=======
+
+				PROVISIONING_PROFILE = ""
 				PRODUCT_BUNDLE_IDENTIFIER = com.ac.wce.cxa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
->>>>>>> master
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1533,14 +1529,10 @@
 					"-ObjC",
 					"$(inherited)",
 				);
-<<<<<<< HEAD
-				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.wce.cxa.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+
 				PROVISIONING_PROFILE = "";
-=======
 				PRODUCT_BUNDLE_IDENTIFIER = com.ac.wce.cxa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
->>>>>>> master
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1684,12 +1676,9 @@
 					"-ObjC",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.wce.cxa.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aco.wce.cxa.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-<<<<<<< HEAD
 				PROVISIONING_PROFILE = "";
-=======
->>>>>>> master
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1733,12 +1722,9 @@
 					"-ObjC",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.wce.cxa.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aco.wce.cxa.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-<<<<<<< HEAD
 				PROVISIONING_PROFILE = "";
-=======
->>>>>>> master
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
