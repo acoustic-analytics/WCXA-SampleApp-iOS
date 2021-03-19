@@ -9,13 +9,13 @@ WCXA-SampleApp-iOS is one of the sample iOS application that shows how to integr
 
 You need to have recent cocoapods version install on your Mac OS. Current version is 1.4.0. Please refer to cocoapods website for the details.
 
-For SDK prerequisites and documentation, please refer to the SDK documentation [here](https://developer.ibm.com/customer-engagement/docs/watson-marketing/ibm-watson-customer-experience-analytics/ibm-watson-customer-experience-analytics-mobile-basic-edition/)
+For SDK prerequisites and documentation, please refer to the SDK documentation [here](https://developer.goacoustic.com/acoustic-exp-analytics/docs/acoustic-experience-analytics-tealeaf-sdk-for-ios-standard-and-mobile-editions)
 
 ### Installing
 
 Clone the sample app code from git hub location
 
-`git clone https://github.com/ibm-watson-cxa/WCXA-SampleApp-iOS.git`
+`git clone https://github.com/acoustic-analytics/WCXA-SampleApp-iOS.git`
 
 Go to the sample app location
 
@@ -23,9 +23,9 @@ Go to the sample app location
 
 Open Podfile in a text editor of your choice and note the following lines in the Podfile
 
-`source 'https://github.com/ibm-watson-cxa/EOCore.git'`
+`source 'https://github.com/acoustic-analytics/EOCore.git'`
 
-`source 'https://github.com/ibm-watson-cxa/IBMTealeaf.git'`
+`source 'https://github.com/acoustic-analytics/IBMTealeaf.git'`
 
 `source 'https://github.com/CocoaPods/Specs.git'`
 
@@ -71,4 +71,4 @@ If you are using Debug version of IBM Tealeaf SDK. i.e. `pod 'IBMTealeafDebug'` 
 
 ## License
 
-License files can be read [here](https://github.com/ibm-watson-cxa/IBMTealeaf/tree/master/Licenses)
+License files can be read [here](https://github.com/acoustic-analytics/IBMTealeaf/tree/master/Licenses)
