@@ -35,7 +35,7 @@
     tapScroll.cancelsTouchesInView = NO;
     [self.scrollView addGestureRecognizer:tapScroll];
     
-    self.ibmIdTextField.delegate = self;
+    self.acoIdTextField.delegate = self;
     self.appKeyTextField.delegate = self;
     self.postMessageTextField.delegate = self;
     self.killSwitchTextField.delegate = self;
@@ -95,7 +95,7 @@
     
     if ([[TLFApplicationHelper sharedInstance] isTLFEnabled]) {
         self.sessionIdLabel.text = [[TLFApplicationHelper sharedInstance] currentSessionId];
-        self.ibmIdTextField.text = [[TLFApplicationHelper sharedInstance] valueForConfigurableItem:@"ibmId"];
+        self.acoIdTextField.text = [[TLFApplicationHelper sharedInstance] valueForConfigurableItem:@"acoId"];
         self.appKeyTextField.text = [[TLFApplicationHelper sharedInstance] valueForConfigurableItem:@"AppKey"];
         self.postMessageTextField.text = [[TLFApplicationHelper sharedInstance] valueForConfigurableItem:@"PostMessageUrl"];
         self.killSwitchTextField.text = [[TLFApplicationHelper sharedInstance] valueForConfigurableItem:@"KillSwitchUrl"];
@@ -133,11 +133,11 @@
         appKeyStr = self.appKeyTextField.text;
     }
     BOOL isEnvChanged = YES;
-    BOOL isIBMIdChanged = YES;
+    BOOL isAcoIdChanged = YES;
     RLMResults<CXAEnv *> *results = [CXAEnv allObjects];
     if (results.count > 0) {
-        if ([self.ibmIdTextField.text isEqualToString:results[0].ibmID]) {
-            isIBMIdChanged = NO;
+        if ([self.acoIdTextField.text isEqualToString:results[0].acoID]) {
+            isAcoIdChanged = NO;
         }
         if ([appKeyStr isEqualToString:results[0].appKey] && [postMsgStr isEqualToString:results[0].postMessageURL] && [killSwitchStr isEqualToString:results[0].killSwitch]) {
             isEnvChanged = NO;            // user not changed the CXA environment
@@ -147,7 +147,7 @@
     if (isEnvChanged) {
         
         CXAEnv *env = [[CXAEnv alloc] init];
-        env.ibmID = self.ibmIdTextField.text;
+        env.acoID = self.acoIdTextField.text;
         env.appKey = appKeyStr;
         env.postMessageURL = postMsgStr;
         env.killSwitch = killSwitchStr;
@@ -175,10 +175,10 @@
         }
     }
 
-    if (isIBMIdChanged)
+    if (isAcoIdChanged)
     {
-        //[[TLFCustomEvent sharedInstance] logEvent:@"ibmId" value:self.ibmIdTextField.text];
-        [[TLFApplicationHelper sharedInstance] setConfigurableItem:@"ibmId" value:self.ibmIdTextField.text];
+        //[[TLFCustomEvent sharedInstance] logEvent:@"acoId" value:self.acoIdTextField.text];
+        [[TLFApplicationHelper sharedInstance] setConfigurableItem:@"acoId" value:self.acoIdTextField.text];
     }
     if (self.presentedViewController) {
         [self dismissViewControllerAnimated:NO completion:nil];

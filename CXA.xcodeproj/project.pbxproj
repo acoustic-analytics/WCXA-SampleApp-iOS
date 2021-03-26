@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2493E13711593887348A62ED /* Pods_CXASDKDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8772449AEB440F5A0C8E6BFF /* Pods_CXASDKDev.framework */; };
+		410ED0CBCDC7EB86D0AFA84F /* Pods_CXASDKDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1A8CAE594F240AEF0CB876 /* Pods_CXASDKDev.framework */; };
 		6317C9D8249D3B9B00B840F0 /* NSString+TealeafCryptography.m in Sources */ = {isa = PBXBuildFile; fileRef = 6317C9D7249D3B9B00B840F0 /* NSString+TealeafCryptography.m */; };
 		6317C9D9249D3B9B00B840F0 /* NSString+TealeafCryptography.m in Sources */ = {isa = PBXBuildFile; fileRef = 6317C9D7249D3B9B00B840F0 /* NSString+TealeafCryptography.m */; };
 		6317C9DD249D431100B840F0 /* NSData+TealeafCryptography.m in Sources */ = {isa = PBXBuildFile; fileRef = 6317C9DC249D431100B840F0 /* NSData+TealeafCryptography.m */; };
@@ -127,9 +127,9 @@
 		63F4A9112044B7D000A535C8 /* CXAEnv2.png in Resources */ = {isa = PBXBuildFile; fileRef = F6F3C04D1EDF55A20062F1CD /* CXAEnv2.png */; };
 		63F4A9122044B7D000A535C8 /* Replay_screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = F697FCCB1E92F76300CD8275 /* Replay_screenshot.png */; };
 		63F4A9132044B7D000A535C8 /* officeLaptop.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB8881DCB910800E039A6 /* officeLaptop.png */; };
-		6EECA5706CDB0E8C7B37F51A /* Pods_CXA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EDC4E0152C277EC2C888DF9 /* Pods_CXA.framework */; };
 		994701E0252E576600F02A5C /* TLFResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 994701DF252E576600F02A5C /* TLFResources.bundle */; };
 		994701E4252E577100F02A5C /* EOCoreSettings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 994701E3252E577100F02A5C /* EOCoreSettings.bundle */; };
+		F4DDDFA3AA6231F9A550B5B1 /* Pods_CXA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45681E31378650B9D76594AE /* Pods_CXA.framework */; };
 		F60180B21E37DA59000615D2 /* CXAEnvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F60180B11E37DA59000615D2 /* CXAEnvViewController.m */; };
 		F60180B51E37DF92000615D2 /* CXAEnv.m in Sources */ = {isa = PBXBuildFile; fileRef = F60180B41E37DF92000615D2 /* CXAEnv.m */; };
 		F625BCFD1DB93C4E007D78FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F625BCFC1DB93C4E007D78FE /* main.m */; };
@@ -245,38 +245,6 @@
 		F6F3C0501EDF64B50062F1CD /* CXAEnv.png in Resources */ = {isa = PBXBuildFile; fileRef = F6F3C04F1EDF64B50062F1CD /* CXAEnv.png */; };
 /* End PBXBuildFile section */
 
-<<<<<<< HEAD
-/* Begin PBXContainerItemProxy section */
-		9934FCD5222F612200CE1B78 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9934FCCB222F612200CE1B78 /* Tealeaf.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 66FD56BA1A3A4BD600E3827C;
-			remoteInfo = Tealeaf;
-		};
-		9934FCD7222F612200CE1B78 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9934FCCB222F612200CE1B78 /* Tealeaf.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 99610C0A20A10F3100F412B8;
-			remoteInfo = TealeafReactNative;
-		};
-		9934FCD9222F612200CE1B78 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9934FCCB222F612200CE1B78 /* Tealeaf.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 66FD56C51A3A4BD600E3827C;
-			remoteInfo = TealeafTests;
-		};
-		9934FCDB222F612200CE1B78 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9934FCCB222F612200CE1B78 /* Tealeaf.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 66FD56E01A3A4F7C00E3827C;
-			remoteInfo = TealeafTestApp;
-		};
-/* End PBXContainerItemProxy section */
-=======
 /* Begin PBXCopyFilesBuildPhase section */
 		9947026B252E919F00F02A5C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -298,11 +266,10 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
->>>>>>> master
 
 /* Begin PBXFileReference section */
-		0EDC4E0152C277EC2C888DF9 /* Pods_CXA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CXA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C3AD318EBCCF1CC8205D582 /* Pods-CXASDKDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXASDKDev.release.xcconfig"; path = "Target Support Files/Pods-CXASDKDev/Pods-CXASDKDev.release.xcconfig"; sourceTree = "<group>"; };
+		40A66D4E41EFAE80D3058DCB /* Pods-CXASDKDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXASDKDev.release.xcconfig"; path = "Target Support Files/Pods-CXASDKDev/Pods-CXASDKDev.release.xcconfig"; sourceTree = "<group>"; };
+		45681E31378650B9D76594AE /* Pods_CXA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CXA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6317C9D6249D3B9B00B840F0 /* NSString+TealeafCryptography.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+TealeafCryptography.h"; sourceTree = "<group>"; };
 		6317C9D7249D3B9B00B840F0 /* NSString+TealeafCryptography.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+TealeafCryptography.m"; sourceTree = "<group>"; };
 		6317C9DB249D431100B840F0 /* NSData+TealeafCryptography.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+TealeafCryptography.h"; sourceTree = "<group>"; };
@@ -311,22 +278,14 @@
 		63626A2022135467007A8864 /* EndUserConsentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EndUserConsentViewController.m; sourceTree = "<group>"; };
 		63CCF32A2411A44B00CB3722 /* TealeafAnomaly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TealeafAnomaly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F4A91B2044B7D000A535C8 /* CXASDKDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CXASDKDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
-<<<<<<< HEAD
-		63F4A91C2044B7D000A535C8 /* CXASDKDev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CXASDKDev-Info.plist"; path = "/Users/sdamale/dev/publicgit/WCXA-SampleApp-iOS/CXASDKDev-Info.plist"; sourceTree = "<absolute>"; };
-		89AF9D78A3CF0E920332DD5C /* Pods-CXA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXA.release.xcconfig"; path = "Pods/Target Support Files/Pods-CXA/Pods-CXA.release.xcconfig"; sourceTree = "<group>"; };
-		9934FCCB222F612200CE1B78 /* Tealeaf.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Tealeaf.xcodeproj; path = "../iOS-SDK/iOSSrc/Tealeaf/Tealeaf.xcodeproj"; sourceTree = "<group>"; };
-		B67952BBF0B40D9303E2B6CE /* Pods-CXA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CXA/Pods-CXA.debug.xcconfig"; sourceTree = "<group>"; };
-		F40A81C6AD9CF85AECD4D652 /* Pods-CXASDKDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXASDKDev.release.xcconfig"; path = "Pods/Target Support Files/Pods-CXASDKDev/Pods-CXASDKDev.release.xcconfig"; sourceTree = "<group>"; };
-=======
-		802B4D33228B72AC723135A3 /* Pods-CXA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXA.debug.xcconfig"; path = "Target Support Files/Pods-CXA/Pods-CXA.debug.xcconfig"; sourceTree = "<group>"; };
-		8772449AEB440F5A0C8E6BFF /* Pods_CXASDKDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CXASDKDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		852B9A8407A1AEE3D011210D /* Pods-CXA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXA.release.xcconfig"; path = "Target Support Files/Pods-CXA/Pods-CXA.release.xcconfig"; sourceTree = "<group>"; };
 		99470178252E501B00F02A5C /* libEOCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libEOCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		994701DF252E576600F02A5C /* TLFResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TLFResources.bundle; path = "../iOS-SDK/iOSSrc/Tealeaf/Tealeaf/TLFResources.bundle"; sourceTree = "<group>"; };
 		994701E3252E577100F02A5C /* EOCoreSettings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = EOCoreSettings.bundle; path = "../iOS-SDK/iOSSrc/EOCore/EOCore/EOCoreSettings.bundle"; sourceTree = "<group>"; };
 		996E17BF252ED31E000D8419 /* EOCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EOCore.framework; path = Pods/EOCoreDebug/SDKs/iOS/Debug/EOCore.framework; sourceTree = "<group>"; };
-		E8DA7A617FE53F473819C7C6 /* Pods-CXA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXA.release.xcconfig"; path = "Target Support Files/Pods-CXA/Pods-CXA.release.xcconfig"; sourceTree = "<group>"; };
-		EEE0853CD6E4EA6D66E95195 /* Pods-CXASDKDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXASDKDev.debug.xcconfig"; path = "Target Support Files/Pods-CXASDKDev/Pods-CXASDKDev.debug.xcconfig"; sourceTree = "<group>"; };
->>>>>>> master
+		CB1A8CAE594F240AEF0CB876 /* Pods_CXASDKDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CXASDKDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4E2967764A8B81ECBD3168B /* Pods-CXASDKDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXASDKDev.debug.xcconfig"; path = "Target Support Files/Pods-CXASDKDev/Pods-CXASDKDev.debug.xcconfig"; sourceTree = "<group>"; };
+		D4F2AD85483CADEEAC690608 /* Pods-CXA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXA.debug.xcconfig"; path = "Target Support Files/Pods-CXA/Pods-CXA.debug.xcconfig"; sourceTree = "<group>"; };
 		F60180B01E37DA59000615D2 /* CXAEnvViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXAEnvViewController.h; sourceTree = "<group>"; };
 		F60180B11E37DA59000615D2 /* CXAEnvViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXAEnvViewController.m; sourceTree = "<group>"; };
 		F60180B31E37DF92000615D2 /* CXAEnv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXAEnv.h; sourceTree = "<group>"; };
@@ -503,7 +462,7 @@
 				63F4A8D42044B7D000A535C8 /* UIKit.framework in Frameworks */,
 				63F4A8D52044B7D000A535C8 /* Foundation.framework in Frameworks */,
 				63F4A8D62044B7D000A535C8 /* SystemConfiguration.framework in Frameworks */,
-				2493E13711593887348A62ED /* Pods_CXASDKDev.framework in Frameworks */,
+				410ED0CBCDC7EB86D0AFA84F /* Pods_CXASDKDev.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,7 +480,7 @@
 				F671E9241DC11A9A00E8E355 /* UIKit.framework in Frameworks */,
 				F671E9221DC11A9100E8E355 /* Foundation.framework in Frameworks */,
 				F671E9201DC11A8800E8E355 /* SystemConfiguration.framework in Frameworks */,
-				6EECA5706CDB0E8C7B37F51A /* Pods_CXA.framework in Frameworks */,
+				F4DDDFA3AA6231F9A550B5B1 /* Pods_CXA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,10 +490,10 @@
 		3FD394A28ACFA9DE28CB2FFF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				802B4D33228B72AC723135A3 /* Pods-CXA.debug.xcconfig */,
-				E8DA7A617FE53F473819C7C6 /* Pods-CXA.release.xcconfig */,
-				EEE0853CD6E4EA6D66E95195 /* Pods-CXASDKDev.debug.xcconfig */,
-				2C3AD318EBCCF1CC8205D582 /* Pods-CXASDKDev.release.xcconfig */,
+				D4F2AD85483CADEEAC690608 /* Pods-CXA.debug.xcconfig */,
+				852B9A8407A1AEE3D011210D /* Pods-CXA.release.xcconfig */,
+				D4E2967764A8B81ECBD3168B /* Pods-CXASDKDev.debug.xcconfig */,
+				40A66D4E41EFAE80D3058DCB /* Pods-CXASDKDev.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -548,17 +507,6 @@
 				6317C9DC249D431100B840F0 /* NSData+TealeafCryptography.m */,
 			);
 			name = Categories;
-			sourceTree = "<group>";
-		};
-		9934FCCC222F612200CE1B78 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9934FCD6222F612200CE1B78 /* libTealeaf.a */,
-				9934FCD8222F612200CE1B78 /* libTealeafReactNative.a */,
-				9934FCDA222F612200CE1B78 /* TealeafTests.xctest */,
-				9934FCDC222F612200CE1B78 /* TealeafTestApp.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		F625BCEF1DB93C4E007D78FE = {
@@ -761,14 +709,8 @@
 		F671E91E1DC11A8800E8E355 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				6386C4772044B9050036D782 /* libEOCore.a */,
-				6386C4782044B9050036D782 /* libTealeaf.a */,
-				9934FCCB222F612200CE1B78 /* Tealeaf.xcodeproj */,
-=======
 				99470178252E501B00F02A5C /* libEOCore.a */,
 				63CCF32A2411A44B00CB3722 /* TealeafAnomaly.framework */,
->>>>>>> master
 				F6C4A11A1EE0C29200D3F2C4 /* SafariServices.framework */,
 				F6A4CD3D1DEA7527002925B5 /* CoreGraphics.framework */,
 				F6A4CD3B1DEA7520002925B5 /* CFNetwork.framework */,
@@ -780,8 +722,8 @@
 				F671E9231DC11A9A00E8E355 /* UIKit.framework */,
 				F671E9211DC11A9100E8E355 /* Foundation.framework */,
 				F671E91F1DC11A8800E8E355 /* SystemConfiguration.framework */,
-				0EDC4E0152C277EC2C888DF9 /* Pods_CXA.framework */,
-				8772449AEB440F5A0C8E6BFF /* Pods_CXASDKDev.framework */,
+				45681E31378650B9D76594AE /* Pods_CXA.framework */,
+				CB1A8CAE594F240AEF0CB876 /* Pods_CXASDKDev.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -951,13 +893,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63F4A9182044B7D000A535C8 /* Build configuration list for PBXNativeTarget "CXASDKDev" */;
 			buildPhases = (
-				B0ECD4979355C03A7FA5CFF7 /* [CP] Check Pods Manifest.lock */,
+				8D4BAAAC8CF9FC037F9E26E5 /* [CP] Check Pods Manifest.lock */,
 				63F4A89F2044B7D000A535C8 /* Sources */,
 				63F4A8CC2044B7D000A535C8 /* Frameworks */,
 				63F4A8D82044B7D000A535C8 /* Resources */,
 				9947026B252E919F00F02A5C /* CopyFiles */,
 				9947026E252E922F00F02A5C /* Embed Frameworks */,
-				82310CC9009E0411E6F5A90F /* [CP] Embed Pods Frameworks */,
+				78E2C69AC5AF1359D617568C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -972,12 +914,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F625BD121DB93C4E007D78FE /* Build configuration list for PBXNativeTarget "CXA" */;
 			buildPhases = (
-				067E991DE645A0AAB271E4D6 /* [CP] Check Pods Manifest.lock */,
+				9ED58D30A660B4D53A3B9A9F /* [CP] Check Pods Manifest.lock */,
 				F625BCF41DB93C4E007D78FE /* Sources */,
 				F625BCF51DB93C4E007D78FE /* Frameworks */,
 				F625BCF61DB93C4E007D78FE /* Resources */,
-				C47D436136DD96E6622711A5 /* [CP] Embed Pods Frameworks */,
-				07DBEF3E0DFB3777257BB178 /* [CP] Copy Pods Resources */,
+				CA770511481EA0BA4F6B6E68 /* [CP] Embed Pods Frameworks */,
+				E177FD8481F61BD6894E9385 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -994,24 +936,16 @@
 		F625BCF01DB93C4E007D78FE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = Acoustic;
 				TargetAttributes = {
 					63F4A89C2044B7D000A535C8 = {
-<<<<<<< HEAD
-						DevelopmentTeam = PP64RT7P8Z;
-=======
 						DevelopmentTeam = QXQ67VKX2B;
->>>>>>> master
 						ProvisioningStyle = Automatic;
 					};
 					F625BCF71DB93C4E007D78FE = {
 						CreatedOnToolsVersion = 8.0;
-<<<<<<< HEAD
-						DevelopmentTeam = PP64RT7P8Z;
-=======
 						DevelopmentTeam = QXQ67VKX2B;
->>>>>>> master
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1028,12 +962,6 @@
 			mainGroup = F625BCEF1DB93C4E007D78FE;
 			productRefGroup = F625BCF91DB93C4E007D78FE /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 9934FCCC222F612200CE1B78 /* Products */;
-					ProjectRef = 9934FCCB222F612200CE1B78 /* Tealeaf.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				F625BCF71DB93C4E007D78FE /* CXA */,
@@ -1041,37 +969,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		9934FCD6222F612200CE1B78 /* libTealeaf.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libTealeaf.a;
-			remoteRef = 9934FCD5222F612200CE1B78 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9934FCD8222F612200CE1B78 /* libTealeafReactNative.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libTealeafReactNative.a;
-			remoteRef = 9934FCD7222F612200CE1B78 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9934FCDA222F612200CE1B78 /* TealeafTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = TealeafTests.xctest;
-			remoteRef = 9934FCD9222F612200CE1B78 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9934FCDC222F612200CE1B78 /* TealeafTestApp.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = TealeafTestApp.app;
-			remoteRef = 9934FCDB222F612200CE1B78 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		63F4A8D82044B7D000A535C8 /* Resources */ = {
@@ -1211,49 +1108,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		067E991DE645A0AAB271E4D6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CXA-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		07DBEF3E0DFB3777257BB178 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CXA/Pods-CXA-resources.sh",
-				"${PODS_ROOT}/EOCoreDebug/SDKs/iOS/Debug/EOCore.framework/EOCoreSettings.bundle",
-				"${PODS_ROOT}/IBMTealeafDebug/SDKs/iOS/Debug/Tealeaf.framework/TLFResources.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EOCoreSettings.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TLFResources.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CXA/Pods-CXA-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		82310CC9009E0411E6F5A90F /* [CP] Embed Pods Frameworks */ = {
+		78E2C69AC5AF1359D617568C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1271,7 +1126,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CXASDKDev/Pods-CXASDKDev-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B0ECD4979355C03A7FA5CFF7 /* [CP] Check Pods Manifest.lock */ = {
+		8D4BAAAC8CF9FC037F9E26E5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1293,7 +1148,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C47D436136DD96E6622711A5 /* [CP] Embed Pods Frameworks */ = {
+		9ED58D30A660B4D53A3B9A9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CXA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA770511481EA0BA4F6B6E68 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1313,6 +1190,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CXA/Pods-CXA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E177FD8481F61BD6894E9385 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CXA/Pods-CXA-resources.sh",
+				"${PODS_ROOT}/EOCoreDebug/SDKs/iOS/Debug/EOCore.framework/EOCoreSettings.bundle",
+				"${PODS_ROOT}/IBMTealeafDebug/SDKs/iOS/Debug/Tealeaf.framework/TLFResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EOCoreSettings.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TLFResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CXA/Pods-CXA-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1450,21 +1347,14 @@
 /* Begin XCBuildConfiguration section */
 		63F4A9192044B7D000A535C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EEE0853CD6E4EA6D66E95195 /* Pods-CXASDKDev.debug.xcconfig */;
+			baseConfigurationReference = D4E2967764A8B81ECBD3168B /* Pods-CXASDKDev.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-<<<<<<< HEAD
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COMPRESS_PNG_FILES = NO;
-				DEVELOPMENT_TEAM = PP64RT7P8Z;
-=======
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMPRESS_PNG_FILES = NO;
 				DEVELOPMENT_TEAM = QXQ67VKX2B;
->>>>>>> master
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1473,7 +1363,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CXA/CXA-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/CXASDKDev-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1484,8 +1374,6 @@
 					"-ObjC",
 					"$(inherited)",
 				);
-
-				PROVISIONING_PROFILE = ""
 				PRODUCT_BUNDLE_IDENTIFIER = com.ac.wce.cxa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1495,21 +1383,14 @@
 		};
 		63F4A91A2044B7D000A535C8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C3AD318EBCCF1CC8205D582 /* Pods-CXASDKDev.release.xcconfig */;
+			baseConfigurationReference = 40A66D4E41EFAE80D3058DCB /* Pods-CXASDKDev.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-<<<<<<< HEAD
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COMPRESS_PNG_FILES = NO;
-				DEVELOPMENT_TEAM = PP64RT7P8Z;
-=======
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMPRESS_PNG_FILES = NO;
 				DEVELOPMENT_TEAM = QXQ67VKX2B;
->>>>>>> master
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1518,7 +1399,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CXA/CXA-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/CXASDKDev-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1529,8 +1410,6 @@
 					"-ObjC",
 					"$(inherited)",
 				);
-
-				PROVISIONING_PROFILE = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ac.wce.cxa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1542,20 +1421,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -1582,7 +1471,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1595,20 +1484,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -1629,7 +1528,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "-ObjC";
@@ -1640,21 +1539,14 @@
 		};
 		F625BD131DB93C4E007D78FE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 802B4D33228B72AC723135A3 /* Pods-CXA.debug.xcconfig */;
+			baseConfigurationReference = D4F2AD85483CADEEAC690608 /* Pods-CXA.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-<<<<<<< HEAD
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COMPRESS_PNG_FILES = NO;
-				DEVELOPMENT_TEAM = PP64RT7P8Z;
-=======
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMPRESS_PNG_FILES = NO;
 				DEVELOPMENT_TEAM = QXQ67VKX2B;
->>>>>>> master
 				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1676,9 +1568,8 @@
 					"-ObjC",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aco.wce.cxa.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aco.cxa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1686,21 +1577,14 @@
 		};
 		F625BD141DB93C4E007D78FE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8DA7A617FE53F473819C7C6 /* Pods-CXA.release.xcconfig */;
+			baseConfigurationReference = 852B9A8407A1AEE3D011210D /* Pods-CXA.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-<<<<<<< HEAD
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COMPRESS_PNG_FILES = NO;
-				DEVELOPMENT_TEAM = PP64RT7P8Z;
-=======
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMPRESS_PNG_FILES = NO;
 				DEVELOPMENT_TEAM = QXQ67VKX2B;
->>>>>>> master
 				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1722,9 +1606,8 @@
 					"-ObjC",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aco.wce.cxa.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aco.cxa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

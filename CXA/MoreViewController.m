@@ -25,10 +25,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.dataArray = [NSArray arrayWithObjects:@"View Orders", @"Update CXA Environment Details", @"View Session Replay", @"About IBM WCXA Mobile app", @"Support", @"Exit Demo", @"Settings", nil];
+    self.dataArray = [NSArray arrayWithObjects:@"View Orders", @"Update CXA Environment Details", @"View Session Replay", @"About Acoustic WCXA Mobile app", @"Support", @"Exit Demo", @"Settings", nil];
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     [self.tableView setSeparatorInset:UIEdgeInsetsZero];
-    self.navigationItem.title = @"IBM WCXA Mobile";
+    self.navigationItem.title = @"Acoustic WCXA Mobile";
 }
 
 - (void)didReceiveMemoryWarning {

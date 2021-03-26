@@ -71,7 +71,7 @@
     if( (currentUIIdiom == UIUserInterfaceIdiomPhone) || (currentUIIdiom == UIUserInterfaceIdiomPad) )
     {
         NSOperatingSystemVersion minVer = (NSOperatingSystemVersion){11, 0, 0};
-        NSOperatingSystemVersion maxVer = (NSOperatingSystemVersion){14, 0, 1};
+        NSOperatingSystemVersion maxVer = (NSOperatingSystemVersion){14, 3, 0};
         NSOperatingSystemVersion skipVers[2] = {{11, 0, 0},{12, 1, 1}};
         /*Check if at least min version*/
         if( [[NSProcessInfo processInfo] isOperatingSystemAtLeastVersion:minVer] )
@@ -150,7 +150,7 @@
         [[TLFApplicationHelper sharedInstance] setPostMessageUrl:results[0].postMessageURL];
         [[TLFApplicationHelper sharedInstance] setKillSwitchUrl:results[0].killSwitch];
         [[TLFApplicationHelper sharedInstance] setConfigurableItem:@"AppKey" value:results[0].appKey];
-        [[TLFApplicationHelper sharedInstance] setConfigurableItem:@"ibmId" value:results[0].ibmID];
+        [[TLFApplicationHelper sharedInstance] setConfigurableItem:@"acoId" value:results[0].acoID];
         
         [AppManager sharedInstance].openConfigSession = NO;
     }
@@ -170,10 +170,10 @@
         }
     }
     
-    // Logging custom event for ibmId in each session
-    //    if (dict[@"ibmId"]) {
-    //        if (![dict[@"ibmId"] isEqualToString:@""]) {
-    //            [[TLFCustomEvent sharedInstance] logEvent:@"ibmId" value:dict[@"ibmId"]];
+    // Logging custom event for acoId in each session
+    //    if (dict[@"acoId"]) {
+    //        if (![dict[@"acoId"] isEqualToString:@""]) {
+    //            [[TLFCustomEvent sharedInstance] logEvent:@"acoId" value:dict[@"acoId"]];
     //        }
     //    }
     return YES;

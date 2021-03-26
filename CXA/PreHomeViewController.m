@@ -94,7 +94,7 @@
         [[TLFApplicationHelper sharedInstance] setPostMessageUrl:results[0].postMessageURL];
         [[TLFApplicationHelper sharedInstance] setKillSwitchUrl:results[0].killSwitch];
         [[TLFApplicationHelper sharedInstance] setConfigurableItem:@"AppKey" value:results[0].appKey];
-        [[TLFApplicationHelper sharedInstance] setConfigurableItem:@"ibmId" value:results[0].ibmID];
+        [[TLFApplicationHelper sharedInstance] setConfigurableItem:@"acoId" value:results[0].acoID];
         
         [AppManager sharedInstance].openConfigSession = NO;
     }
@@ -116,7 +116,7 @@
     [[TLFApplicationHelper sharedInstance] setPostMessageUrl:dict[@"PostMessageUrl"]];
     [[TLFApplicationHelper sharedInstance] setKillSwitchUrl:dict[@"KillSwitchUrl"]];
     [[TLFApplicationHelper sharedInstance] setConfigurableItem:@"AppKey" value:dict[@"AppKey"]];
-    [[TLFApplicationHelper sharedInstance] setConfigurableItem:@"ibmId" value:dict[@"ibmId"]];
+    [[TLFApplicationHelper sharedInstance] setConfigurableItem:@"acoId" value:dict[@"acoId"]];
     
     [AppManager sharedInstance].openConfigSession = NO;
 }

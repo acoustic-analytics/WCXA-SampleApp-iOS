@@ -52,7 +52,7 @@
     if( segue && ([[segue destinationViewController] class] == [SupportViewController class]) )
     {
         SupportViewController* destinationVC = [segue destinationViewController];
-        destinationVC.destinationURL = @"https://www.ibm.com/support/knowledgecenter/en/SS2MBL_9.0.2/Installation/CX/InstOverview/HowDataPrivacyWorks.html";
+        destinationVC.destinationURL = @"https://acoustic.com/privacy-notice/";
         destinationVC.navigationTitle = @"Privacy Policy";
     }
 }

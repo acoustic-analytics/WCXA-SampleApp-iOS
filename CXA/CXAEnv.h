@@ -17,7 +17,7 @@
 @interface CXAEnv : RLMObject
 
 @property (nonatomic, strong) NSString  *dummyId;
-@property (nonatomic, strong) NSString  *ibmID;
+@property (nonatomic, strong) NSString  *acoID;
 @property (nonatomic, strong) NSString  *appKey;
 @property (nonatomic, strong) NSString  *postMessageURL;
 @property (nonatomic, strong) NSString  *killSwitch;
