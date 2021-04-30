@@ -7,7 +7,7 @@ WCXA-SampleApp-iOS is one of the sample iOS application that shows how to integr
 
 ### Prerequisites
 
-You need to have recent cocoapods version install on your Mac OS. Current version is 1.4.0. Please refer to cocoapods website for the details.
+You need to have recent cocoapods version install on your Mac OS. Current version is 1.10.1. Please refer to cocoapods website for the details.
 
 For SDK prerequisites and documentation, please refer to the SDK documentation [here](https://developer.goacoustic.com/acoustic-exp-analytics/docs/acoustic-experience-analytics-tealeaf-sdk-for-ios-standard-and-mobile-editions)
 
@@ -21,34 +21,6 @@ Go to the sample app location
 
 `cd WCXA-SampleApp-iOS`
 
-Open Podfile in a text editor of your choice and note the following lines in the Podfile
-
-`source 'https://github.com/acoustic-analytics/EOCore.git'`
-
-`source 'https://github.com/acoustic-analytics/IBMTealeaf.git'`
-
-`source 'https://github.com/CocoaPods/Specs.git'`
-
-Also note the platform in the Podfile iOS 9
-
-`platform :ios, '9.0'`
-
-Note that use_frameworks is uncommented
-
-`use_frameworks!`
-
-In the respective targets for your project in the Podfile add the following line if you want to use Tealeaf SDK's release version
-
-`pod 'IBMTealeaf'`
-
-In the respective targets for your project in the Podfile add the following line if you want to use Tealeaf SDK's debug version
-
-`pod 'IBMTealeafDebug'`
-
-You will notice that by default the sample application uses `pod 'IBMTealeafDebug'`
-
-Note that you can use only one of  `pod 'IBMTealeaf'` and `pod 'IBMTealeafDebug'`. Do not use both at the same time.
-
 Now you need to install the pods by running one of the following commands.
 
 `pod install`
@@ -60,6 +32,8 @@ or to update
 Above pod command (install or update) should complete with no errors. If you do see errors run the same command with `--verbose` option and share the error log with us.
 
 Open `CXA.xcworkspace` file and not the `CXA.xcodeproj` file. Once you open the workspace file, please use target CXA to build the sample app and run it. There are multiple targets in the project however the only one that serves for this example is the CXA target.
+
+This project also uses Swift Package from https://github.com/acoustic-analytics/Tealeaf-SP which installs Tealeaf.
 
 ## Troubleshooting
 
