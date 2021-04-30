@@ -127,6 +127,7 @@
 		63F4A9112044B7D000A535C8 /* CXAEnv2.png in Resources */ = {isa = PBXBuildFile; fileRef = F6F3C04D1EDF55A20062F1CD /* CXAEnv2.png */; };
 		63F4A9122044B7D000A535C8 /* Replay_screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = F697FCCB1E92F76300CD8275 /* Replay_screenshot.png */; };
 		63F4A9132044B7D000A535C8 /* officeLaptop.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB8881DCB910800E039A6 /* officeLaptop.png */; };
+		99152FF526128B200097630F /* Tealeaf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99152FBF26128ACE0097630F /* Tealeaf.framework */; };
 		994701E0252E576600F02A5C /* TLFResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 994701DF252E576600F02A5C /* TLFResources.bundle */; };
 		994701E4252E577100F02A5C /* EOCoreSettings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 994701E3252E577100F02A5C /* EOCoreSettings.bundle */; };
 		F4DDDFA3AA6231F9A550B5B1 /* Pods_CXA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45681E31378650B9D76594AE /* Pods_CXA.framework */; };
@@ -245,6 +246,65 @@
 		F6F3C0501EDF64B50062F1CD /* CXAEnv.png in Resources */ = {isa = PBXBuildFile; fileRef = F6F3C04F1EDF64B50062F1CD /* CXAEnv.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		99152FBC26128ACE0097630F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99152FAC26128ACE0097630F /* Tealeaf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 66FD56BA1A3A4BD600E3827C;
+			remoteInfo = Tealeaf;
+		};
+		99152FBE26128ACE0097630F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99152FAC26128ACE0097630F /* Tealeaf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 99C6CC5A25CB9FF5004298D8;
+			remoteInfo = XCTealeaf;
+		};
+		99152FC026128ACE0097630F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99152FAC26128ACE0097630F /* Tealeaf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 99610C0A20A10F3100F412B8;
+			remoteInfo = TealeafReactNative;
+		};
+		99152FC226128ACE0097630F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99152FAC26128ACE0097630F /* Tealeaf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 99865E0F25E0916100B905BE;
+			remoteInfo = XCTealeafReactNative;
+		};
+		99152FC426128ACE0097630F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99152FAC26128ACE0097630F /* Tealeaf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 66FD56C51A3A4BD600E3827C;
+			remoteInfo = TealeafTests;
+		};
+		99152FC626128ACE0097630F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99152FAC26128ACE0097630F /* Tealeaf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 992D4ABB25E06AED00476193;
+			remoteInfo = XCTealeafTests;
+		};
+		99152FC826128ACE0097630F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99152FAC26128ACE0097630F /* Tealeaf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 66FD56E01A3A4F7C00E3827C;
+			remoteInfo = TealeafTestApp;
+		};
+		99152FCA26128ACE0097630F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99152FAC26128ACE0097630F /* Tealeaf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 992D4B0125E06B0700476193;
+			remoteInfo = XCTealeafTestApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		9947026B252E919F00F02A5C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -279,6 +339,8 @@
 		63CCF32A2411A44B00CB3722 /* TealeafAnomaly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TealeafAnomaly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F4A91B2044B7D000A535C8 /* CXASDKDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CXASDKDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		852B9A8407A1AEE3D011210D /* Pods-CXA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXA.release.xcconfig"; path = "Target Support Files/Pods-CXA/Pods-CXA.release.xcconfig"; sourceTree = "<group>"; };
+		99152FAC26128ACE0097630F /* Tealeaf.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Tealeaf.xcodeproj; path = "../iOS-SDK/iOSSrc/Tealeaf/Tealeaf.xcodeproj"; sourceTree = "<group>"; };
+		99152FE626128B150097630F /* EOCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EOCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99470178252E501B00F02A5C /* libEOCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libEOCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		994701DF252E576600F02A5C /* TLFResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TLFResources.bundle; path = "../iOS-SDK/iOSSrc/Tealeaf/Tealeaf/TLFResources.bundle"; sourceTree = "<group>"; };
 		994701E3252E577100F02A5C /* EOCoreSettings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = EOCoreSettings.bundle; path = "../iOS-SDK/iOSSrc/EOCore/EOCore/EOCoreSettings.bundle"; sourceTree = "<group>"; };
@@ -470,6 +532,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99152FF526128B200097630F /* Tealeaf.framework in Frameworks */,
 				F6C4A11B1EE0C29200D3F2C4 /* SafariServices.framework in Frameworks */,
 				F6A4CD3E1DEA7527002925B5 /* CoreGraphics.framework in Frameworks */,
 				F6A4CD3C1DEA7520002925B5 /* CFNetwork.framework in Frameworks */,
@@ -507,6 +570,21 @@
 				6317C9DC249D431100B840F0 /* NSData+TealeafCryptography.m */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		99152FAD26128ACE0097630F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99152FBD26128ACE0097630F /* libTealeaf.a */,
+				99152FBF26128ACE0097630F /* Tealeaf.framework */,
+				99152FC126128ACE0097630F /* libTealeafReactNative.a */,
+				99152FC326128ACE0097630F /* XCTealeafReactNative.framework */,
+				99152FC526128ACE0097630F /* TealeafTests.xctest */,
+				99152FC726128ACE0097630F /* XCTealeafTests.xctest */,
+				99152FC926128ACE0097630F /* TealeafTestApp.app */,
+				99152FCB26128ACE0097630F /* XCTealeafTestApp.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		F625BCEF1DB93C4E007D78FE = {
@@ -709,6 +787,8 @@
 		F671E91E1DC11A8800E8E355 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				99152FE626128B150097630F /* EOCore.framework */,
+				99152FAC26128ACE0097630F /* Tealeaf.xcodeproj */,
 				99470178252E501B00F02A5C /* libEOCore.a */,
 				63CCF32A2411A44B00CB3722 /* TealeafAnomaly.framework */,
 				F6C4A11A1EE0C29200D3F2C4 /* SafariServices.framework */,
@@ -962,6 +1042,12 @@
 			mainGroup = F625BCEF1DB93C4E007D78FE;
 			productRefGroup = F625BCF91DB93C4E007D78FE /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 99152FAD26128ACE0097630F /* Products */;
+					ProjectRef = 99152FAC26128ACE0097630F /* Tealeaf.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F625BCF71DB93C4E007D78FE /* CXA */,
@@ -969,6 +1055,65 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		99152FBD26128ACE0097630F /* libTealeaf.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTealeaf.a;
+			remoteRef = 99152FBC26128ACE0097630F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99152FBF26128ACE0097630F /* Tealeaf.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Tealeaf.framework;
+			remoteRef = 99152FBE26128ACE0097630F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99152FC126128ACE0097630F /* libTealeafReactNative.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTealeafReactNative.a;
+			remoteRef = 99152FC026128ACE0097630F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99152FC326128ACE0097630F /* XCTealeafReactNative.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = XCTealeafReactNative.framework;
+			remoteRef = 99152FC226128ACE0097630F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99152FC526128ACE0097630F /* TealeafTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TealeafTests.xctest;
+			remoteRef = 99152FC426128ACE0097630F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99152FC726128ACE0097630F /* XCTealeafTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = XCTealeafTests.xctest;
+			remoteRef = 99152FC626128ACE0097630F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99152FC926128ACE0097630F /* TealeafTestApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TealeafTestApp.app;
+			remoteRef = 99152FC826128ACE0097630F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99152FCB26128ACE0097630F /* XCTealeafTestApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = XCTealeafTestApp.app;
+			remoteRef = 99152FCA26128ACE0097630F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		63F4A8D82044B7D000A535C8 /* Resources */ = {
