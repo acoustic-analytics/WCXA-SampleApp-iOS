@@ -21,7 +21,7 @@ Go to the sample app location
 
 `cd WCXA-SampleApp-iOS`
 
-Open Cartfile in a text editor of your choice and note the following lines in the Podfile
+Open Cartfile in a text editor of your choice and note the following lines:
 
 In the respective targets for your project in the Podfile add the following line if you want to use Tealeaf SDK's release version
 
