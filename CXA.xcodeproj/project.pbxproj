@@ -966,8 +966,6 @@
 				Base,
 			);
 			mainGroup = F625BCEF1DB93C4E007D78FE;
-			packageReferences = (
-			);
 			productRefGroup = F625BCF91DB93C4E007D78FE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1123,10 +1121,8 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CXA/Pods-CXA-resources.sh",
-				"${PODS_ROOT}/EOCoreDebug/SDKs/iOS/Debug/EOCore.xcframework/ios-arm64_armv7/EOCore.framework/EOCoreSettings.bundle",
-				"${PODS_ROOT}/EOCoreDebug/SDKs/iOS/Debug/EOCore.xcframework/ios-arm64_i386_x86_64-simulator/EOCore.framework/EOCoreSettings.bundle",
-				"${PODS_ROOT}/TealeafDebug/SDKs/iOS/Debug/Tealeaf.xcframework/ios-arm64_armv7/Tealeaf.framework/TLFResources.bundle",
-				"${PODS_ROOT}/TealeafDebug/SDKs/iOS/Debug/Tealeaf.xcframework/ios-arm64_i386_x86_64-simulator/Tealeaf.framework/TLFResources.bundle",
+				"${PODS_ROOT}/EOCoreDebug/SDKs/iOS/Debug/EOCoreSettings.bundle",
+				"${PODS_ROOT}/TealeafDebug/SDKs/iOS/Debug/TLFResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (

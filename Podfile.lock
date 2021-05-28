@@ -1,11 +1,11 @@
 PODS:
-  - EOCoreDebug (2.3.52)
+  - EOCoreDebug (2.3.55)
   - Realm (10.7.6):
     - Realm/Headers (= 10.7.6)
   - Realm/Headers (10.7.6)
-  - TealeafDebug (10.6.88):
-    - TealeafDebug/Core (= 10.6.88)
-  - TealeafDebug/Core (10.6.88):
+  - TealeafDebug (10.6.90):
+    - TealeafDebug/Core (= 10.6.90)
+  - TealeafDebug/Core (10.6.90):
     - EOCoreDebug
 
 DEPENDENCIES:
@@ -19,10 +19,10 @@ SPEC REPOS:
     - TealeafDebug
 
 SPEC CHECKSUMS:
-  EOCoreDebug: 4b000cb0ab34b4850906145dd3def0d688edcb4e
+  EOCoreDebug: 136aa0aef85a2d4e2792b0d6c8ff00677562dbd6
   Realm: ed860452717c8db8f4bf832b6807f7f2ce708839
-  TealeafDebug: 14403a1838208eb26038b1156f6da8c2e366774b
+  TealeafDebug: d6e6b3155f4e967d21320cd13c0139d2cbd81c27
 
-PODFILE CHECKSUM: afc5f3de1ba64e4c3a600a8549d8e19c832558df
+PODFILE CHECKSUM: 6f3279db2f5787090924d5837d96f282a12942c9
 
 COCOAPODS: 1.10.1
