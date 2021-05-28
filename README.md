@@ -1,6 +1,6 @@
 # WCXA-SampleApp-iOS
 
-WCXA-SampleApp-iOS is one of the sample iOS application that shows how to integrate [Tealeaf SDK](https://github.com/acoustic-analytics/IBMTealeaf) with any iOS Application.
+WCXA-SampleApp-iOS is one of the sample iOS application that shows how to integrate [Tealeaf SDK](https://github.com/acoustic-analytics/Tealeaf) with any iOS Application.
 
 
 ## Getting Started
@@ -25,13 +25,13 @@ Open Cartfile in a text editor of your choice and note the following lines:
 
 In the respective targets for your project in the Podfile add the following line if you want to use Tealeaf SDK's release version
 
-`binary "https://raw.githubusercontent.com/acoustic-analytics/IBMTealeaf/master/Tealeaf.json" >= 10.6.36`
+`binary "https://raw.githubusercontent.com/acoustic-analytics/Tealeaf/master/Tealeaf.json" >= 10.6.36`
 
 `binary "https://raw.githubusercontent.com/acoustic-analytics/EOCore/master/EOCore.json" >= 2.3.24`
 
 In the respective targets for your project in the Podfile add the following line if you want to use Tealeaf SDK's debug version
 
-`binary "https://raw.githubusercontent.com/acoustic-analytics/IBMTealeaf/master/TealeafDebug.json" >= 10.6.36`
+`binary "https://raw.githubusercontent.com/acoustic-analytics/Tealeaf/master/TealeafDebug.json" >= 10.6.36`
 
 `binary "https://raw.githubusercontent.com/acoustic-analytics/EOCore/master/EOCoreDebug.json" >= 2.3.24`
 
@@ -57,4 +57,4 @@ If you are using Debug version of Tealeaf SDK, then you may edit your project's 
 
 ## License
 
-License files can be read [here](https://github.com/acoustic-analytics/IBMTealeaf/tree/master/Licenses)
+License files can be read [here](https://github.com/acoustic-analytics/Tealeaf/tree/master/Licenses)
