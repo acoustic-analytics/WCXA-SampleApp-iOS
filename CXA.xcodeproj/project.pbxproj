@@ -126,9 +126,9 @@
 		63F4A9112044B7D000A535C8 /* CXAEnv2.png in Resources */ = {isa = PBXBuildFile; fileRef = F6F3C04D1EDF55A20062F1CD /* CXAEnv2.png */; };
 		63F4A9122044B7D000A535C8 /* Replay_screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = F697FCCB1E92F76300CD8275 /* Replay_screenshot.png */; };
 		63F4A9132044B7D000A535C8 /* officeLaptop.png in Resources */ = {isa = PBXBuildFile; fileRef = F68FB8881DCB910800E039A6 /* officeLaptop.png */; };
-		990B84B3263B992B007630F1 /* Tealeaf in Frameworks */ = {isa = PBXBuildFile; productRef = 990B84B2263B992B007630F1 /* Tealeaf */; };
 		994701E0252E576600F02A5C /* TLFResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 994701DF252E576600F02A5C /* TLFResources.bundle */; };
 		994701E4252E577100F02A5C /* EOCoreSettings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 994701E3252E577100F02A5C /* EOCoreSettings.bundle */; };
+		99B94DE126609BC200BB2154 /* Tealeaf in Frameworks */ = {isa = PBXBuildFile; productRef = 99B94DE026609BC200BB2154 /* Tealeaf */; };
 		99DF4D1D263CDD8100AF1036 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 99DF4D1C263CDD8100AF1036 /* Realm */; };
 		F60180B21E37DA59000615D2 /* CXAEnvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F60180B11E37DA59000615D2 /* CXAEnvViewController.m */; };
 		F60180B51E37DF92000615D2 /* CXAEnv.m in Sources */ = {isa = PBXBuildFile; fileRef = F60180B41E37DF92000615D2 /* CXAEnv.m */; };
@@ -462,7 +462,6 @@
 			files = (
 				F6C4A11B1EE0C29200D3F2C4 /* SafariServices.framework in Frameworks */,
 				F6A4CD3E1DEA7527002925B5 /* CoreGraphics.framework in Frameworks */,
-				990B84B3263B992B007630F1 /* Tealeaf in Frameworks */,
 				F6A4CD3C1DEA7520002925B5 /* CFNetwork.framework in Frameworks */,
 				F671E92C1DC11AD400E8E355 /* CoreTelephony.framework in Frameworks */,
 				F671E92A1DC11AC500E8E355 /* WebKit.framework in Frameworks */,
@@ -470,6 +469,7 @@
 				F671E9281DC11AC000E8E355 /* CoreLocation.framework in Frameworks */,
 				F671E9261DC11AAC00E8E355 /* libz.tbd in Frameworks */,
 				F671E9241DC11A9A00E8E355 /* UIKit.framework in Frameworks */,
+				99B94DE126609BC200BB2154 /* Tealeaf in Frameworks */,
 				F671E9221DC11A9100E8E355 /* Foundation.framework in Frameworks */,
 				F671E9201DC11A8800E8E355 /* SystemConfiguration.framework in Frameworks */,
 			);
@@ -896,8 +896,8 @@
 			);
 			name = CXA;
 			packageProductDependencies = (
-				990B84B2263B992B007630F1 /* Tealeaf */,
 				99DF4D1C263CDD8100AF1036 /* Realm */,
+				99B94DE026609BC200BB2154 /* Tealeaf */,
 			);
 			productName = CXA;
 			productReference = F625BCF81DB93C4E007D78FE /* CXA.app */;
@@ -934,8 +934,8 @@
 			);
 			mainGroup = F625BCEF1DB93C4E007D78FE;
 			packageReferences = (
-				990B84B1263B992B007630F1 /* XCRemoteSwiftPackageReference "Tealeaf-SP" */,
 				99DF4D1B263CDD8100AF1036 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				99B94DDF26609BC200BB2154 /* XCRemoteSwiftPackageReference "TealeafDebug-SP" */,
 			);
 			productRefGroup = F625BCF91DB93C4E007D78FE /* Products */;
 			projectDirPath = "";
@@ -1522,11 +1522,11 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		990B84B1263B992B007630F1 /* XCRemoteSwiftPackageReference "Tealeaf-SP" */ = {
+		99B94DDF26609BC200BB2154 /* XCRemoteSwiftPackageReference "TealeafDebug-SP" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/acoustic-analytics/Tealeaf-SP";
+			repositoryURL = "https://github.com/acoustic-analytics/TealeafDebug-SP";
 			requirement = {
-				branch = main;
+				branch = master;
 				kind = branch;
 			};
 		};
@@ -1541,9 +1541,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		990B84B2263B992B007630F1 /* Tealeaf */ = {
+		99B94DE026609BC200BB2154 /* Tealeaf */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 990B84B1263B992B007630F1 /* XCRemoteSwiftPackageReference "Tealeaf-SP" */;
+			package = 99B94DDF26609BC200BB2154 /* XCRemoteSwiftPackageReference "TealeafDebug-SP" */;
 			productName = Tealeaf;
 		};
 		99DF4D1C263CDD8100AF1036 /* Realm */ = {

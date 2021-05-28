@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/realm/realm-cocoa",
         "state": {
           "branch": null,
-          "revision": "239a6a383af5d4b445626a95aa6356925e6acf22",
-          "version": "10.7.4"
+          "revision": "7e5c77fd7fbb30259e8e6e6a41f32289f72e0812",
+          "version": "10.7.6"
         }
       },
       {
@@ -15,16 +15,16 @@
         "repositoryURL": "https://github.com/realm/realm-core",
         "state": {
           "branch": null,
-          "revision": "28ed052d10d2245542b4fbdc71d388febb1e9bc4",
-          "version": "10.6.0"
+          "revision": "018adb3469c2882904febca251778129ef4a9b70",
+          "version": "10.7.2"
         }
       },
       {
         "package": "Tealeaf",
-        "repositoryURL": "https://github.com/acoustic-analytics/Tealeaf-SP",
+        "repositoryURL": "https://github.com/acoustic-analytics/TealeafDebug-SP",
         "state": {
-          "branch": "main",
-          "revision": "807e9170c485ca788b52d00354b19ff97b185181",
+          "branch": "master",
+          "revision": "81ea21a99e617fd65a170c0914c7b39ad852b878",
           "version": null
         }
       }
